@@ -1,0 +1,31 @@
+---
+layout: post
+title: "随便写的两个HTML5 Web应用"
+date: 2014-02-28 16:56
+comments: true
+tags: HTML5 
+categories: HTML5
+sidebar: false
+---
+实在无聊死了。写几个别人也写过了的Web APP吧。
+
+一个是 <a href="/works/tax/index.html" target="_blank">个税计算器</a> 。
+
+一个是 <a href="/works/loan/index.html" target="_blank">房贷计算器</a> 。
+
+<!-- more -->
+
+###关于apple-touch-icon
+在网站的根目录下，放一个图片文件，名为 apple-touch-icon.png，然后如果用户将你的网站添加到iPad Safari浏览器的个人收藏里，那么Safari会将这个图片作为图标放在默认标签中。
+
+需要注意的是，这个图片的大小没有限制。在iPad 4 的Safari 里，会显示为57×57像素的效果。所以，最好将这个图片尺寸做得大一些，这样才能清楚。例如豆瓣电影、百度、淘宝、谷歌、新浪、优酷，都使用了大尺寸的apple-touch-icon图标。而虎嗅网还没有察觉到这个细节，目前仍然是使用了小尺寸的apple-touch-icon图标，所以不清晰。
+
+【后记】
+
+还是推荐apple-touch-icon的标准解决方案：使用`link`标签：
+
+```html apple-touch-icon的标准解决方案
+<link rel="apple-touch-icon" href="/favicon.png" />
+```
+
+人人网也是这么用的。

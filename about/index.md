@@ -13,6 +13,7 @@ date: 2015-08-09 10:49:42
 + 民族：汉族
 + 籍贯：山东省沂水县
 + 出生年月：1989-07
++ 现居地：江苏南京
 + E-mail： wangzilong-thu@qq.com
 
 ### 技能
@@ -21,9 +22,10 @@ date: 2015-08-09 10:49:42
 + 熟悉的服务器端技能/框架：Node.js, Express
 + 略懂的技能： MySQL, C/C++, Java, Linux
 + 略懂的软件： Adobe Premiere/ Photoshop/ Illustrator, Vi
++ 其他：Git, Gulp, Less
 
 ### 项目&工作经历
-+ 2014-07 至 现在 就职于CNGC，担任软件开发工程师，主要负责Web前端开发。
++ 2014-07 至 现在 就职于NICG，担任软件开发工程师，主要负责Web前端开发以及服务器端Nodejs相关的开发。
 + 2013-06 至 2013-09 研究生期间，在实验室的一个网站项目中负责Web前端开发。该网站是一个面向清华学生的，具备在线提交作业、批改作业、浏览课件等功能的平台。
 + 2012-01 至 2013-03 研究生阶段，某国防项目，使用C++/Qt进行用于某类飞行器气动力分析的软件的开发。
 
@@ -37,3 +39,7 @@ date: 2015-08-09 10:49:42
 
 ### More
 <a href="aboutMe-longStory.html">关于我：一个刚入门的web前端码农</a>
+
+博客： http://borninsummer.com/
+
+Github: https://github.com/zilong-thu/

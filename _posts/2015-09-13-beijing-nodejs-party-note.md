@@ -84,3 +84,8 @@ Nodejs server职能：
 
 ### MongoDB
 性能有点扛不住了。
+
+
+最后感谢主办方，并附上合影一张，哈哈哈。
+
+![合影](/images/2015/09/20150913-party-photo.jpg)

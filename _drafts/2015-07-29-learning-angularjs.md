@@ -7,7 +7,7 @@ categories: JavaScript
 
 ---
 
-##SPA
+## SPA
 如果是从零开始，不使用任何框架来开发一个单页面应用，那么最可怕的噩梦应该就是后期的维护问题了：太多的脚本，凌乱的依赖。
 
 > The challenge with building SPAs from scratch is there’s a lot of different issues to deal with: DOM

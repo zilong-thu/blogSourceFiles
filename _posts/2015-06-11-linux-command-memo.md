@@ -67,7 +67,7 @@ passwd: password updated successfully
 
 `passwd` 进入修改自己的密码的模式
 
-## 系统资源与进程
+## 系统资源与监控
 
 `ps aux`  查看系统的所有进程(参数说明 a: 与Terminal无关；u: 有效用户相关的进程；x：列出完整信息，通常与参数a一起使用。)
 
@@ -76,6 +76,10 @@ passwd: password updated successfully
 `free -m -t`  以MB为单位（`-m`），显示所有可用内存（`-t`），然后打印出内存使用情况
 
 `df -hl`  查看电脑的磁盘等信息
+
+`lscpu`  查看电脑的CPU信息，可以据此了解CPU核心数、主频等关键信息
+
+`top`  可以实时输出系统的CPU、内存使用情况
 
 ## 权限管理
 

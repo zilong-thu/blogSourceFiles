@@ -62,9 +62,9 @@ $.ajax({
 });
 ```
 
-## Node.js端
+## Node.js的npm包之request
 
-如果使用了流行的npm模块[`request`](ttps://github.com/request/request)，那么这样写是模拟URLEncoded编码进行提交的：
+在Node.js环境中，如果使用了流行的npm模块[`request`](ttps://github.com/request/request)，那么这样写是模拟URLEncoded编码进行提交的：
 
 ```
 request.post('http://service.com/upload', {
@@ -81,7 +81,9 @@ request({
     url: '',
     method: 'POST',
     json: true,
-    body: object
+    body: {
+        key:'value'
+    }
 });
 ```
 `request`模块对`body`的说明：

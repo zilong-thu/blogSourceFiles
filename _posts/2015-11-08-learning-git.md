@@ -102,6 +102,17 @@ git stash
 git pull --rebase origin feature/my_feature_1
 git stash apply
 
+# 查看暂存栈
+git stash list
+
 # 清空暂存区
 git stash clean
+
+# 删除一个远程分支
+git push --delete origin/branch_to_delete
+
+# 创建一个新分支，让它与远程分支的名称一样，并且保持与该远程分支相关
+# 这样就创建了一个名为 feature/branch_1 的本地新分支
+git fetch origin feature/branch_1
+git checkout --track origin/feature/branch_1
 ```

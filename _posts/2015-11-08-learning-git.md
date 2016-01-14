@@ -75,11 +75,13 @@ master
 `git branch -D branch_name`，无视该分支下的未合并的提交，强制删除。
 
 ### 重命名一个本地分支
+
 使用`-m`修饰符，表明要重命名一个分支（`m`相当于Linux下的`move`，或者`mv`的缩写，`mv`命令在Linux里用于重命名文件）
 
 `git branch -m <oldname> <newname>`，修改任意本地分支的名字
 
 `git branch -m <new_name_for_the_current_branch>`，修改当前所在分支的名字
+
 ---------------------------
 
  

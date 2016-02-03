@@ -85,7 +85,7 @@ passwd: password updated successfully
 
 `chown [选项] [所有者用户][:[组名]] 文件`  把某文件的所有者改为某某用户，以及归到某组下
 
-
+`chmod 744 [filename]`  把一个文件的权限改为 `rwxrwxr--`
 
 ## 网络操作
 

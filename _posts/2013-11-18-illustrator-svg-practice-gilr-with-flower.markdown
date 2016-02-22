@@ -11,9 +11,9 @@ sidebar: false
 
 刚开始当然是先练习自由路径的使用，参考教材：<a href="http://book.douban.com/subject/24303555/" class="douban_book" name="24303555" target="_blank">《Illustrator CS6中文版：从新手到高手》</a>。第一张是女孩剪影图。
 
-<embed src="{{ root_url}}/svg/Girl.svg" type="image/svg+xml">
+<embed src="/svg/Girl.svg" type="image/svg+xml">
 <!-- more -->
 
 第二张是一只黑猫。
 
-<embed src="{{ root_url}}/svg/Cat.svg" type="image/svg+xml">
+<embed src="/svg/Cat.svg" type="image/svg+xml">

@@ -11,7 +11,7 @@ Illustrator从零开始作画，才能起到练手的作用。这个是花费4�
 
 嘴唇我懒得画了，用弧线代替。下次再研究如何画烈焰红唇~~
 
-<embed src="{{ root_url}}/svg/FashionGirl.svg" type="image/svg+xml">
+<embed src="/svg/FashionGirl.svg" type="image/svg+xml">
 
 小结：
 <!-- more -->

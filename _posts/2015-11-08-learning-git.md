@@ -77,6 +77,13 @@ git commit --amend
 
 ## 分支操作
 
+### 查看分支
+`git branch`，查看已有的本地分支
+
+`git branch -a`，查看全部分支，包括本地分支和远程追踪分支
+
+`git branch -r`，只查看远程追踪分支
+
 ### 删除分支
 `git branch -d branch_name`，适用于要删除的分支中的所有数据都已经合并到其他分支里的情形。
 

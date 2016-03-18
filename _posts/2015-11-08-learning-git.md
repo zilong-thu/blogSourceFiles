@@ -97,6 +97,23 @@ git commit --amend
 
 `git branch -m <new_name_for_the_current_branch>`，修改当前所在分支的名字
 
+### 跟踪远程分支
+
+如果一个分支尚未与相应的远程分支建立跟踪关系，可以在 `push` 的时候顺便指定一下：
+
+```
+git push --set-upstream origin master
+```
+
+意思是，向远程（origin）分支（master）提交代码，并且今后把这个远程分支作为当前分支的远程跟踪分支。以后运行 `git status` 就会提示当前分支是否落后于远程跟踪分支了。
+
+Git 的提示：
+
+> The current branch master has no upstream branch.
+> 
+> To push the current branch and set the remote as upstream, use
+>
+>    git push --set-upstream origin master
 
 ## 储藏
 

@@ -18,14 +18,15 @@ date: 2015-08-09 10:49:42
 
 ### 技能
 + 主要编程语言： HTML, CSS, JavaScript
-+ 熟悉的前端库/框架： jQuery, Bootstrap, Underscore, Angularjs
++ 熟悉的前端库/框架： jQuery, Bootstrap, Underscore, Angular.js, React.js
 + 熟悉的服务器端技能/框架：Node.js, Express
++ 熟悉的工具：Git
 + 略懂的技能： MySQL, C/C++, Java, Linux
 + 略懂的软件： Adobe Premiere/ Photoshop/ Illustrator, Vi
-+ 其他：Git, Gulp, Less
++ 其他：Gulp, Less
 
 ### 项目&工作经历
-+ 2015-12 至 今，美团猫眼电影（试用期）
++ 2015-12 至 今，美团·猫眼电影
 + 2015-10 至 2015-12，兼职爱推科技，XD项目，担任前端开发工程师，负责Web页面重构、目录组织优化、代码优化等前端开发工作，并使用Node.js对原架构（基于Django）进行前后端分离。
 + 2014-07 至 2015-10 就职于NICG（南京），担任软件开发工程师，主要负责Web前端开发以及服务器端Nodejs相关的开发。
 + 2013-06 至 2013-09 研究生期间，在实验室的一个网站项目中负责Web前端开发。该网站是一个面向清华学生的，具备在线提交作业、批改作业、浏览课件等功能的平台。

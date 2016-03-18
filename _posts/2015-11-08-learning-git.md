@@ -8,7 +8,7 @@ banner: /images/2015/11/git.jpg
 
 ---
 
-本文记录一下自己在学习、使用Git时不断碰到的问题与解决方法。个人感觉最好的在线教材是 [《Pro Git 2nd Edition（中文版）》](http://git.oschina.net/progit/)。遗憾的是这本书尚无国内出版社出版发行，因此无法享受到纸质书阅读的快乐（除非自己打印了一本~~）。另外，《Git版本控制管理（第2版）》这本书也很不错。有纸质书可以读。
+本文记录一下自己在学习、使用Git时不断碰到的问题与解决方法。个人感觉最好的在线教材是 [《Pro Git 2nd Edition（中文版）》](http://git.oschina.net/progit/)。遗憾的是这本书尚无国内出版社出版发行，因此无法享受到纸质书阅读的快乐（除非自己打印了一本~~）。另外，《Git版本控制管理（第2版）》这本书也很不错，有纸质书可以读。
 
 <!-- more -->
 
@@ -97,6 +97,35 @@ git commit --amend
 
 `git branch -m <new_name_for_the_current_branch>`，修改当前所在分支的名字
 
+
+## 储藏
+
+`git stash` 命令会捕获当前分支的工作目录和索引的全部状态，将其存储在一个栈中。
+
+不想提交，又想获取最新的远程仓库代码时：
+
+```
+git stash
+git pull --rebase origin feature/my_feature_1
+git stash apply
+```
+
+`git stash` 默认执行的是 `git stash save`，可以给这个储藏添加一条备注：
+
+````
+git stash save "这是一个暂存"
+```
+
+`git stash apply` 只会取出储藏栈最上面的那个状态，并不会删除它。想要达到“弹出栈”的效果，可以使用 `git stash pop`，这条命令会把储藏栈的顶端状态弹出，并将其从栈中删除。
+
+`git stash list`， 查看暂存栈。里面编号为 0 的是最新的暂存状态。
+
+`git stash clean`， 清空暂存区
+
+
+## 裸版本库
+【待学习补充】
+
 ---------------------------
 
  
@@ -118,18 +147,6 @@ gitk <filename>
 
 # 提交记录，带每次的更改状态
 git log --stat
-
-# 暂存
-# 不想提交，又想获取最新的远程仓库代码时
-git stash
-git pull --rebase origin feature/my_feature_1
-git stash apply
-
-# 查看暂存栈
-git stash list
-
-# 清空暂存区
-git stash clean
 
 # 删除一个远程分支（对 1.7.0 版本及以上）
 git push origin --delete branch_to_delete

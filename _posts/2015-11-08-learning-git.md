@@ -84,10 +84,15 @@ git commit --amend
 
 `git branch -r`，只查看远程追踪分支
 
-### 删除分支
+### 删除本地分支
 `git branch -d branch_name`，适用于要删除的分支中的所有数据都已经合并到其他分支里的情形。
 
 `git branch -D branch_name`，无视该分支下的未合并的提交，强制删除。
+
+### 删除远程分支
+`git push origin --delete <branch_name>`，可以删除远程仓库里的分支。删除后，会在网站提示诸如此类的消息：
+
+> No branch or tag 'refs/heads/<branch_name>' exists in repository '***'
 
 ### 重命名一个本地分支
 

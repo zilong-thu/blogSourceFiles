@@ -90,6 +90,7 @@ git commit --amend
 `git branch -D branch_name`，无视该分支下的未合并的提交，强制删除。
 
 ### 删除远程分支
+
 `git push origin --delete <branch_name>`，可以删除远程仓库里的分支。删除后，会在网站提示诸如此类的消息：
 
 > No branch or tag 'refs/heads/<branch_name>' exists in repository '***'

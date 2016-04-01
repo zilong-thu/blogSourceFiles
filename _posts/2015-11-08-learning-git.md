@@ -149,6 +149,36 @@ git stash save "这是一个暂存"
 ## 裸版本库
 【待学习补充】
 
+## 提交历史
+`git log`，打开默认的文本编辑器，在其中显示当前分支的提交历史。
+
+`git log <branch_name>`，显示某个分支的提交历史。
+
+### 通过提交信息查找提交历史
+
+这对应一个比较少的场景。
+
+> 产品经理说：“以前我不小心砍掉了一个功能，现在我想让它再次上线，以前的代码应该还在，所以恢复起来不难吧？”
+
+OK，不管难不难，首先得在广袤的代码仓库中找到相关的提交历史。
+
+这个时候，需要关键字。而用户能够用关键字标识提交对象的地方，就只有每次的提交信息（commit message）了。所以说，以后每个特定的功能开始、完成，最好都在提交历史中加入能够描述该功能的关键字。以便日后进行搜索定位。好了，下面说一下如何搜索历史。
+
+猜测那个功能的关键字，是“用户行为分析”。那么可以这样：
+
+> To search the commit log (across all branches) for the given text:
+> 
+> git log --all --grep='用户行为分析'
+>
+> 参考 [How to search a Git repository by commit message?](http://stackoverflow.com/questions/7124914/how-to-search-a-git-repository-by-commit-message)
+
+OK，真的出来了几个提交记录。那么想查看对应的记录快照是否有相应的代码，应该先创建一个分支，然后
+
+`git checkout <commit-id>`，就会把该提交快照全部从仓库里拿到工作区域。
+
+这时候，可以查看当前的 HEAD 是否为希望的提交记录的 ID ：`git rev-parse HEAD`。
+
+
 ---------------------------
 
  

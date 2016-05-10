@@ -63,6 +63,32 @@ JavaScript 引擎进行编译的步骤和传统的编译语言非常相似，在
 ## 函数作用域 vs 块作用域
 
 
+### 函数形参默认值的作用域
+
+ES6 允许为函数的形参指定默认值。如果参数默认值是个变量，则该变量在真正被赋值给形参时，是属于函数外部的作用域的。
+
+```
+var a = 'outer';
+
+function foo(x = a) {
+    var a = 'inner';
+    console.log(x);
+}
+
+foo();  // 输出 outer
+```
+
+而下面的代码则会报错：
+
+```
+function foo(x = b) {
+    var b = 'inner';  
+    console.log(x);
+}
+
+foo();  // ReferenceError: b is not defined
+```
+
 ## 关于 this
 
 ### 为什么要支持 `this`？

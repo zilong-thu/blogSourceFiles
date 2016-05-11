@@ -12,6 +12,13 @@ banner: /images/2015/11/git.jpg
 
 <!-- more -->
 
+## fetch 操作
+fetch 操作仅仅是把远程仓库的代码下载当本地而已。可以同时指定相应的本地分支名，git 便会在 fetch 完成后自动创建一个本地分支，追踪该远程分支。例如：
+
+```
+git fetch origin <branch_name>:<local_branch_nam>
+```
+
 ## pull 操作
 
 ### 强制更新

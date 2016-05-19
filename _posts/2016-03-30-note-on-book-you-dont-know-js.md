@@ -63,6 +63,12 @@ JavaScript 引擎进行编译的步骤和传统的编译语言非常相似，在
 
 > 词法作用域(lexical scope)等同于静态作用域(static scope)
 
+参考资料 [5] 有对此较详细的描述：
+
+> 大多数现在程序设计语言都是采用静态作用域规则，而只有为数不多的几种语言采用动态作用域规则，包括APL、Snobol和Lisp的早期方言……
+> 
+> ……静态作用域和动态作用域的一个重要区别在于：静态作用域规则查找一个变量声明时依赖的是源程序中块之间的静态关系；而动态作用域规则依赖的是程序执行时的函数调用顺序。说的具体点，就是静态作用域查找的是距离当前作用域最近的外层作用域中同名标识符的声明，而动态作用域则是查找最近的活动记录中的同名标识符声明。
+
 ## 函数作用域 vs 块作用域
 
 ### 函数形参默认值的作用域
@@ -93,7 +99,42 @@ foo();  // ReferenceError: b is not defined
 
 ## 关于 this
 
-### 为什么要支持 `this`？
+### this 的特性
+
+首先可以参考MDN的资料<sup>[6]</sup>。
+
+`this` 表现出来足够的动态作用域特点，但是，JavaScript 依然是严格的词法作用域语言。为什么？因为 this 不是变量名，它是关键字。
+
+另外值得注意的，就是箭头函数对于 this 的指向的词法锁定：无论一个箭头函数以怎样的方式被调用（对象方法，bind, call, apply），其 this 始终指向箭头函数声明所在作用域的 this。例如（代码参考[6]，最新版的 Chrome 浏览器是完美支持箭头函数的，可以在其中运行示例代码）：
+
+```
+var globalObject = this;
+var foo = (() => this);
+console.log(foo() === globalObject); // true
+
+// Call as a method of an object
+var obj = {foo: foo};
+console.log(obj.foo() === globalObject); // true
+
+// Attempt to set this using call
+console.log(foo.call(obj) === globalObject); // true
+
+// Attempt to set this using bind
+foo = foo.bind(obj);
+console.log(foo() === globalObject); // true
+```
+
+### `this` 关键字的由来
+
+`this` 关键字似乎已经是面向对象语言的标配了。参考维基百科的解释 <sup>[7]</sup>:
+
+> Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods. A feature of objects is that an object's procedures can access and often modify the data fields of the object with which they are associated (objects have a notion of "this" or "self")
+
+JavaScript 的语法设计很大程度上参考了 Java 语言。具体来说，`this` 的设计，是对 Java 类中的 this 的模仿。不过，JavaScript 实际上并没有传统面向对象语言“类”的特性，其 `this` 跟 Java 相比也有很大的不同。
+
+参考 [When should I use “this” in a class?](http://stackoverflow.com/questions/2411270/when-should-i-use-this-in-a-class)
+
+C++ 也有 this 关键字，类的成员函数可以通过 this 访问到根据类创建的对象实例。
 
 ## 对象
 
@@ -106,3 +147,6 @@ foo();  // ReferenceError: b is not defined
 2. 《ES6标准入门（第2版）》，阮一峰，2016
 3. 《编译原理（第3版）》, Alfred V. Aho, etc.
 4. 《操作系统》
+5. [《静态作用域和动态作用域》](http://www.cnblogs.com/lienhua34/archive/2012/03/10/2388872.html)
+6. [this | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+7. [Object-oriented programming | wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming)

@@ -7,12 +7,14 @@ tags: HTTP
 
 在使用 HTTP POST 或者 PUT 方法向服务器发送非`multipart`类型的数据时，有两种最常用的对消息主体进行编码的方法，它们分别对应不同的`Content-Type`：
 
-| `Content-Type`| 类型说明 | 示例 |
-| ----- | ----- | ------ |
-| `application/x-www-form-urlencoded` | 以 URLEncoded 的方式进行编码 | `name=test&sub%5B%5D=1&sub%5B%5D=2` |
+| `Content-Type`| 类型说明 | 示例
+| ----- | ----- | ------ | ------ |
+| `application/x-www-form-urlencoded` | 以 URLEncoded 的方式进行编码 | `name=test&sub%5B%5D=1&sub%5B%5D=2` 解码后就是：`name=test&sub[]=1&sub[]=2` |
 | `application/json` | 消息主体是序列化后的 JSON 字符串，要求服务器端能够支持JSON | `{"name":"test","sub":[1,2]}` |
 
 <!-- more -->
+
+HTTP 为超文本传输协议，整个的 HTTP 报文，如果按编程语言里面的类型来分的话，就是一大段字符串。
 
 ## 浏览器端
 HTML表单默认是按照`application/x-www-form-urlencoded`进行编码的。

@@ -52,6 +52,12 @@ JavaScript 引擎进行编译的步骤和传统的编译语言非常相似，在
 
 变量、函数提升
 
+### 错误 & 异常
+
+按照运行时期来分，JavaScript 有两类错误：语法分析期错误（SyntaxError）；运行时错误（语法解析没有问题，但是在运行时，查找变量或分配内存的过程中遇到了问题）。后者包括 ① 引用错误（ReferenceError），RHS 查询在所有嵌套的作用域中找不到所需的变量，JS 引擎就会抛出此错误；② 类型错误（TypeError），在通过 RHS 查询找到了一个变量，但是尝试对这个变量的值进行不合理的操作，则引擎就会抛出此类型的异常。
+
+参考：[1]1.4节；[8]2.1.2节；[9]则给出了比较详细的示例代码。
+
 
 ## 词法作用域 vs 动态作用域
 
@@ -150,3 +156,5 @@ C++ 也有 this 关键字，类的成员函数可以通过 this 访问到根据�
 5. [《静态作用域和动态作用域》](http://www.cnblogs.com/lienhua34/archive/2012/03/10/2388872.html)
 6. [this | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 7. [Object-oriented programming | wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming)
+8. 《JavaScript 语言精粹与编程实践（第2版）》，周爱民，2009
+9. [浅谈JavaScript中的错误](http://www.html-js.com/article/On-the-error-in-JavaScript)

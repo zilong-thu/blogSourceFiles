@@ -18,6 +18,19 @@ ES6的许多特性也在本书中有所提到。例如块级变量声明，箭�
 
 <!-- more -->
 
+## JavaScript 的诞生
+
+<img src="/images/2016/06/javascript-birth.jpg" style="width: 300px; float: left; margin: 10px 15px 0 15px;" />
+
+> 1995 – Brendan Eich 读完了历史上所有在程序语言设计中曾经出现过的错误，自己又发明了一些更多的错误，然后用它们创造出了LiveScript。之后，为了紧跟Java语言的时髦潮流，它被重新命名为JavaScript。再然后，为了追随一种皮肤病的时髦潮流，这语言又被命名为ECMAScript。
+> 
+> —— 编程语言简史
+>
+> (注：Eczema，意为“湿疹”)
+ 
+
+> Brendan Eich: “ECMAScript was always an unwanted trade name that sounds like a skin disease.”
+
 ## 编译原理
 
 JavaScript 引擎进行编译的步骤和传统的编译语言非常相似，在某些环节可能比预想的要复杂。
@@ -158,3 +171,5 @@ C++ 也有 this 关键字，类的成员函数可以通过 this 访问到根据�
 7. [Object-oriented programming | wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming)
 8. 《JavaScript 语言精粹与编程实践（第2版）》，周爱民，2009
 9. [浅谈JavaScript中的错误](http://www.html-js.com/article/On-the-error-in-JavaScript)
+10. [JavaScript at 20, by Brendan Eich](http://brendaneich.github.io/ModernWeb.tw-2015/#1)
+11. 《JavaScript 语言精粹（修订版）》, Douglas Crockford

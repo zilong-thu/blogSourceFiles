@@ -98,6 +98,12 @@ JavaScript 引擎进行编译的步骤和传统的编译语言非常相似，在
 
 按照运行时期来分，JavaScript 有两类错误：语法分析期错误（SyntaxError）；运行时错误（语法解析没有问题，但是在运行时，查找变量或分配内存的过程中遇到了问题）。后者包括 ① 引用错误（ReferenceError），RHS 查询在所有嵌套的作用域中找不到所需的变量，JS 引擎就会抛出此错误；② 类型错误（TypeError），在通过 RHS 查询找到了一个变量，但是尝试对这个变量的值进行不合理的操作，则引擎就会抛出此类型的异常。
 
+JavaScript 语言对于左值、右值的异常应该进行如何处理，也是 ECMAScript 标准进行严格的说明了的，例如：
+
+> When an assignment occurs within strict mode code, its LeftHandSide must not evaluate to an unresolvable reference. If it does a ReferenceError exception is thrown upon assignment. The LeftHandSide also may not be a reference to a data property with the attribute value {[[Writable]]:false}, to an accessor property with the attribute value {[[Set]]:undefined}, nor to a non-existent property of an object whose [[Extensible]] internal property has the value false. In these cases a TypeError exception is thrown.
+> 
+> —— http://www.ecma-international.org/ecma-262/5.1/#sec-11.13
+
 参考：[1]1.4节；[8]2.1.2节；[9]则给出了比较详细的示例代码。
 
 

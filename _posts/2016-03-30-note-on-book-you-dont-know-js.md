@@ -18,6 +18,9 @@ ES6的许多特性也在本书中有所提到。例如块级变量声明，箭�
 
 <!-- more -->
 
+这个主题成为我在美团的第一个圆桌分享主题。在此附上当时的幻灯片：<a href="/files/2016/javascript_scope.pdf" target="_blank">《JavaScript 作用域》</a>（一些图片比这篇博客丰富）。欢迎讨论~~
+
+
 ## JavaScript 的诞生
 
 <img src="/images/2016/06/javascript-birth.jpg" style="width: 300px; float: left; margin: 10px 15px 0 15px;" />
@@ -194,6 +197,9 @@ C++ 也有 this 关键字，类的成员函数可以通过 this 访问到根据�
 
 函数是对象，但是函数对象是无法进行复制的。（存疑）
 
+## 总结体会
+
+** 其实很多细节问题，ECMAScript 标准都做出了解释说明。当对问题不清晰时，应该考虑一下直接读标准文档。 **
 
 ## 参考资料
 

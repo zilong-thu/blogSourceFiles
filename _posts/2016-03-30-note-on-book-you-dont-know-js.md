@@ -8,8 +8,6 @@ tags:
 
 <img src="https://img3.doubanio.com/lpic/s28033372.jpg" style="width: 200px; float: right; margin: 0 15px 0;" />
 
-（持续更新）
-
 这本书于2015年4月在国内出版，而2个月之后，ES6正式通过，成为国际标准。
 
 ES6的许多特性也在本书中有所提到。例如块级变量声明，箭头函数，`Object.keys()`方法，`Array.prototype.find()`方法，属性名表达式，以及 `class`，等等。

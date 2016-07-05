@@ -12,6 +12,26 @@ banner: /images/2015/11/git.jpg
 
 <!-- more -->
 
+## 基本配置
+
+### 别名
+
+配置别名可以提高工作效率。
+
+```
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.br branch
+git config --global alias.st status
+```
+
+### 配置用户信息
+
+```
+git config --global user.name "zilong-thu";
+git config --global user.email "809052335@qq.com"
+```
+
 ## fetch 操作
 fetch 操作仅仅是把远程仓库的代码下载当本地而已。可以同时指定相应的本地分支名，git 便会在 fetch 完成后自动创建一个本地分支，追踪该远程分支。例如：
 

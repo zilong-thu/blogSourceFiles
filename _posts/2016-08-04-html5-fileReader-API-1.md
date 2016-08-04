@@ -15,3 +15,5 @@ tags:
 ## 自定义样式
 
 ## 浏览器兼容性
+
+<img src="/images/2016/08/filereader-api-compatible.png" />

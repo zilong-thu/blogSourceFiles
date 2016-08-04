@@ -32,6 +32,17 @@ git config --global user.name "zilong-thu";
 git config --global user.email "809052335@qq.com"
 ```
 
+### 生成公钥（SSH keys）
+
+可以用下面的命令生成自己的公钥（public key）：
+
+```
+# Creates a new ssh key using the provided email
+ssh-keygen -t rsa -C "xxxxx@xxxxx.com"
+```
+
+生成的 public key 在 `~/.ssh/id_rsa.pub` 这个文件里。
+
 ## fetch 操作
 fetch 操作仅仅是把远程仓库的代码下载当本地而已。可以同时指定相应的本地分支名，git 便会在 fetch 完成后自动创建一个本地分支，追踪该远程分支。例如：
 

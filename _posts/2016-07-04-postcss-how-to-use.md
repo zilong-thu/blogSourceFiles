@@ -18,6 +18,8 @@ tags:
 
 ## CSS 极简史
 
+在 CSS 诞生之前，以及与 CSS 同时代，有许多为了解决 HTML 样式问题而提出的解决方案（参考）
+
 ## 各种预处理器
 
 SASS
@@ -38,3 +40,4 @@ Stylus
 
 1. [Cascading Style Sheets](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 2. [precss](https://github.com/jonathantneal/precss)
+3. [The Languages Which Almost Became CSS](https://eager.io/blog/the-languages-which-almost-were-css/)

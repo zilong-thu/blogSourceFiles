@@ -14,9 +14,52 @@ tags:
 
 介绍基本的使用方法
 
+```
+<!-- HTML -->
+<form data-role="input-file">
+  <label class="input-file">
+    <input type="file" name="files" onchange="handleFileInputChange(this);">选择文件
+  </label>
+</form>
+
+// JavaScirpt
+
+function handleFileInputChange(event) {
+  var file = event.target.files[0];
+
+  var reader = new FileReader();
+
+  reader.onload = function(e) {
+    var content = e.target.result;
+    console.log('content of the file: ', content);
+  }
+
+  reader.readAsText(file);
+}
+```
+
 ## 第二次选择同一个文件时不触发 change 事件的问题
 
-解决方案就是每次读完文件，执行一次 form.reset()。
+解决方案就是每次读完文件，执行一次 form.reset()。改写 `reader.onload` 回调后代码如下：
+
+```
+function handleFileInputChange(event) {
+  var file = event.target.files[0];
+
+  var reader = new FileReader();
+
+  reader.onload = function(e) {
+    var content = e.target.result;
+    console.log('content of the file: ', content);
+    var form = document.querySelectorAll('form[data-role="input-file"]')[0];
+    if (form) {
+      form.reset();
+    }
+  }
+
+  reader.readAsText(file);
+}
+```
 
 ## 自定义样式
 

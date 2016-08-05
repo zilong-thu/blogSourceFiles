@@ -15,6 +15,28 @@ tags:
 介绍基本的使用方法
 
 ```
+<style type="text/css">
+  .input-file {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: #0095dd;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+
+  .input-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    cursor: pointer;
+  }
+</style>
 <!-- HTML -->
 <form data-role="input-file">
   <label class="input-file">
@@ -22,8 +44,8 @@ tags:
   </label>
 </form>
 
-// JavaScirpt
-
+<!-- JavaScript -->
+<script>
 function handleFileInputChange(event) {
   var file = event.target.files[0];
 
@@ -36,6 +58,7 @@ function handleFileInputChange(event) {
 
   reader.readAsText(file);
 }
+</script>
 ```
 
 ## 第二次选择同一个文件时不触发 change 事件的问题
@@ -67,36 +90,8 @@ function handleFileInputChange(event) {
 
 <input type="file">
 
-不能获得较好的交互体验。通常的解决方案是在其外面包裹一层自定义样式了的标签，然后将该 `input` 的尺寸设置为与其父元素一致、再设为透明的，就可以实现较好的自定义样式。例如：
+不能获得较好的交互体验。通常的解决方案是在其外面包裹一层自定义样式了的标签，然后将该 `input` 的尺寸设置为与其父元素一致、再设为透明的，就可以初步实现自定义样式。
 
-```
-<!-- html -->
-<label class="input-file">
-  <input type="file" name="">
-</label>
-
-/* CSS */
-.input-file {
-  display: inline-block;
-  position: relative;
-  border: 1px solid #ccc;
-  background-color: #0095dd;
-  padding: 5px;
-  color: #fff;
-  border-radius: 5px;
-  margin-top: 30px;
-}
-
-.input-file input[type="file"] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  cursor: pointer;
-}
-```
 
 示例：
 
@@ -115,9 +110,9 @@ function handleFileInputChange(event) {
   style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0;cursor: pointer;">选择文件
 </label>
 
-可能会发现上面的 `cursor: pointer;` 在某些区域失效。那么如果将input的透明度去掉，那么就可以看到是原生的那个样式在作祟。而给 `input[type="file"]` 添加 `font-size: 0` 规则也未必有用，因为 file input 是浏览器保护程度较高的元素，有的浏览器下，其样式就是无法做成 pointer。而这目前是一个“众所周知的”困扰（参考 [Styling an input type=“file” button | Stackoverflow](http://stackoverflow.com/questions/572768/styling-an-input-type-file-button)）。
+可能会发现上面的 `cursor: pointer;` 在某些区域失效。那么如果将 input 的透明度去掉，那么就可以看到是原生的那个样式在作祟。而给 `input[type="file"]` 添加 `font-size: 0` 规则也未必有用，因为 file input 是浏览器保护程度较高的元素，有的浏览器下，其样式就是无法做成 pointer。而这目前是一个“众所周知的”困扰（参考 [Styling an input type=“file” button | Stackoverflow](http://stackoverflow.com/questions/572768/styling-an-input-type-file-button)）。
 
-解决方案是把 `opacity: 0` 改为 'diaplay: none'：
+解决方案是把 `opacity: 0` 改为 'diaplay: none'（例如本文第一段代码那样）：
 
 <label
   class="input-file"
@@ -135,7 +130,7 @@ function handleFileInputChange(event) {
   style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none;">选择文件
 </label>
 
-上面的参考链接里，有人提出了**最好的解决方案**：
+上面的参考链接里，有人提出了他认为的 **最好的解决方案**：
 
 > The best approach would be to have a custom label element with a **`for`** attribute attached to a hidden file input element. (The label's for attribute must match the file element's id in order for this to work).
 
@@ -161,10 +156,13 @@ function handleFileInputChange(event) {
 
 <img src="/images/2016/08/filereader-api-compatible.png" />
 
-### opacity
+### querySelectorAll
 
-上面进行自定义样式时用到的 opacity 属性的浏览器兼容性是 IE8+ 以及各主流浏览器。可以非常放心地使用。
+IE8部分支持：
 
+> Partial support in IE8 is due to being limited to CSS 2.1 selectors and a small subset of CSS 3 selectors (see notes there). Additionally, it will have trouble with selectors including unrecognized tags (for example HTML5 ones).
+
+IE9+ 及其他所有的浏览器则是全面支持此 API。
 
 ## 参考资料
 

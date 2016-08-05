@@ -12,31 +12,31 @@ tags:
 
 ## 基本使用
 
-介绍基本的使用方法
-
 ```
+<!-- CSS -->
 <style type="text/css">
-  .input-file {
-    display: inline-block;
-    position: relative;
-    border: 1px solid #ccc;
-    background-color: #0095dd;
-    padding: 5px;
-    color: #fff;
-    border-radius: 5px;
-    margin-top: 30px;
-  }
+.input-file {
+  display: inline-block;
+  position: relative;
+  border: 1px solid #ccc;
+  background-color: #0095dd;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 30px;
+}
 
-  .input-file input[type="file"] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    cursor: pointer;
-  }
+.input-file input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  cursor: pointer;
+}
 </style>
+
 <!-- HTML -->
 <form data-role="input-file">
   <label class="input-file">
@@ -74,6 +74,7 @@ function handleFileInputChange(event) {
   reader.onload = function(e) {
     var content = e.target.result;
     console.log('content of the file: ', content);
+
     var form = document.querySelectorAll('form[data-role="input-file"]')[0];
     if (form) {
       form.reset();

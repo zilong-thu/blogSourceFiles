@@ -165,8 +165,9 @@ IE8部分支持：
 
 IE9+ 及其他所有的浏览器则是全面支持此 API。
 
-## 参考资料
+## 参考资料 & 扩展阅读
 
 + [FileReader | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/FileReader)
 + [Styling an input type=“file” button | Stackoverflow](http://stackoverflow.com/questions/572768/styling-an-input-type-file-button)
 + 样式美化相关，最开始找到的是这篇文章：[css input[type=file] 样式美化，input上传按钮美化](http://www.haorooms.com/post/css_input_uploadmh)
++ [Web文件上传方法总结大全](http://www.techug.com/web-file-upload-method)

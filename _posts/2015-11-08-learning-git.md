@@ -195,9 +195,14 @@ git stash save "这是一个暂存"
 【待学习补充】
 
 ## 提交历史
+
+### 基本命令
+
 `git log`，打开默认的文本编辑器，在其中显示当前分支的提交历史。
 
 `git log <branch_name>`，显示某个分支的提交历史。
+
+`git log -p`，会给出提交历史，并且包含了每次提交的逐行增删改对比。
 
 ### 通过提交信息查找提交历史
 
@@ -230,6 +235,10 @@ git diff <commit-id-1> <commit-id-2>
 ```
 
 可以对比两次提交之间的全部差异。例如 `git diff HEAD~ HEAD` 就可以看到所在分支的最近一次提交与之前一次提交的差异。（HEAD只是最近一次提交的 commitID 的别名）
+
+### 找到某一行的全部改动历史
+
+`git blame -L <rowNumber>,<row increment number>`
 
 ---------------------------
 

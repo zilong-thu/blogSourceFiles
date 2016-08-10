@@ -158,6 +158,12 @@ foo();  // ReferenceError: b is not defined
 
 首先可以参考MDN的资料<sup>[6]</sup>。
 
+还可以参考《JavaScript忍者秘籍》<sup>[15]</sup>：
+
+> 一个函数被调用时，除了传入了函数的显式参数外，名为 this 的隐式参数也被传入了函数。this 参数引用了与该函数调用隐式关联的一个对象，称为函数上下文（function context）。
+>
+> 函数上下文是一个来自于像 Java 这样的面向对象语言的概念。面向对象语言认为，this 是方法声明所在的类的一个实例。……事实证明，JavaScript 中的 this 参数与 Java 中的 this 不同，后者依赖于函数的声明，而 JavaScript 中的 this 则依赖于函数的调用方式。基于这个事实，将 this 称为**调用上下文（invocation context）**可能更为清晰。
+
 `this` 表现出来足够的动态作用域特点，但是，JavaScript 依然是严格的词法作用域语言。为什么？因为 this 不是变量名，它是关键字。
 
 另外值得注意的，就是箭头函数对于 this 的指向的词法锁定：无论一个箭头函数以怎样的方式被调用（对象方法，bind, call, apply），其 this 始终指向箭头函数声明所在作用域的 this。例如（代码参考[6]，最新版的 Chrome 浏览器是完美支持箭头函数的，可以在其中运行示例代码）：
@@ -215,3 +221,4 @@ C++ 也有 this 关键字，类的成员函数可以通过 this 访问到根据�
 12. [Java 是编译型语言还是解释型语言？ | 知乎](https://www.zhihu.com/question/19608553)
 13. [虚拟机随谈（一）：解释器，树遍历解释器，基于栈与基于寄存器，大杂烩](http://rednaxelafx.iteye.com/blog/492667)
 14. [V8 (JavaScript引擎) | 维基百科](https://zh.wikipedia.org/wiki/V8_(JavaScript%E5%BC%95%E6%93%8E))
+15. 《JavaScript忍者秘籍》, Jhon Resig & Bear Bibeault 著, 徐涛 译, 2015年10月第1版.

@@ -7,9 +7,9 @@ tags:
 ---
 
 
-这几日写了个小插件（[仓库地址](https://github.com/zilong-thu/toast2.js)），有个因为对 DOM element 的 style 属性的使用不当，导致这个插件有点问题。具体来说，就是无法通过 `element.style = 'display: none'` 来隐藏元素。
+这几日写了个小插件（[仓库地址](https://github.com/zilong-thu/toast2.js)），因为对 DOM element 的 style 属性的使用不当，导致这个插件有点问题。具体来说，就是无法通过 `element.style = 'display: none'` 这种写法来隐藏元素。
 
-因为DOM 标准规定 HTMLElement 的 `style` 属性是只读的。
+**因为DOM 标准规定 HTMLElement 的 `style` 属性是只读的。**
 
 <!-- more -->
 

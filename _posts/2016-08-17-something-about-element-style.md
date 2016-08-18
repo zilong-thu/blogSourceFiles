@@ -13,6 +13,8 @@ tags:
 
 <!-- more -->
 
+### Element.style 是只读的！
+
 > Note that styles should NOT be set by assigning a string directly to the style property (as in elt.style = "color: blue;" ), since it is considered read-only (even though Firefox(Gecko), Chrome and Opera allow it) because the style attribute returns a  CSSStyleDeclaration object which is also read-only.  However, the style property's own properties CAN be used to set styles.  Further, it is easier to use the individual styling-properties of the style property (as in elt.style.color = '...' ) than to use elt.style.cssText = '...' or elt.setAttribute('style', '...') , unless you wish to set the complete style in a single statement, since using the style properties will not overwrite other CSS properties that may already be set in the style attribute.
 
 在插件的实现中，希望通过下面的代码来隐藏元素：
@@ -37,6 +39,25 @@ ele.style.cssText = 'display: none';
 ```
 
 上面的三种技术，是在任何浏览器下都可以将元素隐藏的。
+
+
+### Element.classList
+
+与 style 类似，classList 也是只读的：
+
+> The Element.classList is a read-only property which returns a live DOMTokenList collection of the class attributes of the element.
+> 
+> Using classList is a convenient alternative to accessing an element's list of classes as a space-delimited string via element.className.
+
+不过 classList 拥有若干方法，可以方便地操作元素样式名列表（add、remove、toggle 等等）
+
+
+### Element.className
+
+className 则既是 getter 又是 setter：
+
+> **className gets and sets the value of the class attribute of the specified element.**
+
 
 
 ### 题外话

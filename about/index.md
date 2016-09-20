@@ -18,12 +18,13 @@ date: 2015-08-09 10:49:42
 
 ### 技能
 + 主要编程语言： HTML, CSS, JavaScript
-+ 熟悉的前端库/框架： jQuery, Bootstrap, Underscore, Angular.js, React.js
++ 熟悉的前端库/框架： jQuery, Bootstrap, Underscore, Lodash.js, Angular.js, React.js, ECharts.js
 + 熟悉的服务器端技能/框架：Node.js, Express
 + 熟悉的工具：Git
-+ 略懂的技能： MySQL, C/C++, Java, Linux
++ 熟悉的操作系统：Mac OS, Linux
++ 略懂的技能： MySQL, C/C++, Java
 + 略懂的软件： Adobe Premiere/ Photoshop/ Illustrator, Vi
-+ 其他：Gulp, Less
++ 其他：Gulp, Webpack, Less
 
 ### 项目&工作经历
 + 2015-12 至 今，美团·猫眼电影

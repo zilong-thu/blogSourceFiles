@@ -6,7 +6,8 @@ tags:
 
 <img src="/images/2016/09/s28313380.jpg" style="width: 180px;" alt="《JavaScript忍者秘籍》封面">
 
-书名《JavaScript忍者秘籍》，作者呢是大名鼎鼎的 jQuery 的创作者。这本书里介绍了各种“忍者级”JS用法，收益颇丰。
+书名《JavaScript忍者秘籍》，作者呢是大名鼎鼎的 jQuery 的创作者。这本书里介绍了各种“忍者级”JS用法，收益颇丰。书中的许多示例代码体现了作者在设计 jQuery 时的编程思想，非常有价值。
+
 
 <!-- more -->
 
@@ -70,7 +71,7 @@ function addMethod(object, name, fn) {
   object[name] = function() {
     if (fn.length === arguments.length) {
       return fn.apply(this, arguments);
-    } else if (typeof old === 'function') {
+    } else if (Object.prototype.toString.call(old) === '[object Function]') {
       return old.apply(this, arguments);
     }
   };
@@ -103,6 +104,16 @@ console.log(ninjas.find('c'));  // [c"]
 
 ```
 
+Jhon Resig 自夸说：**这是个绝佳的技巧，因为这些绑定函数实际上并没有存储于任何典型的数据结构中，而是在闭包里作为引用进行存储**。
+
+的确很巧妙。
+
+
+### 第5章 闭包
+
+> 传统上来说，闭包是纯函数式编程语言的一个特性。让闭包跨越到主流语言的开发商尤其令人鼓舞，因为它们能够大大简化复杂的操作，所以很容易在一些 JavaScript 库以及其他高级代码库中找到闭包的使用。
+
+【89页】倒数第二段其实有个错误，原文是：“第二点和第三点解释了为什么内部闭包可以访问到变量 tooLate，而外部闭包不行。”其实由于 var 关键字对变量的声明提升作用，两种“闭包”是都可以访问到 tooLate 这个标识符的。不同之处只是在于对其取右值时拿到的值不同而已。如果真的是访问不到这个变量，那么会报 ReferenceError （引用错误，这是一种运行时错误）。很明显，tooLate 的值为 undefined，与访问 tooLate 时抛出 ReferenceError 相比，还是有很大区别的。
 
 ### 第8章 驯服线程和定时器
 

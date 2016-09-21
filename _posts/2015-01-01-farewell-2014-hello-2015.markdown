@@ -2,7 +2,7 @@
 title: Farewell, 2014. Hello, 2015.
 date: 2015-01-01 22:06:09
 tags: 随笔
-categories: 随笔
+categories: 总结
 sidebar: false
 ---
 写给已经离去的2014年和已经到来的2015年。

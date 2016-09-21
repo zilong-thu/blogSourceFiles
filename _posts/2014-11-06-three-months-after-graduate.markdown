@@ -2,7 +2,7 @@
 layout: post
 title: 毕业工作三个月小结
 date: 2014-11-06 19:48:25
-categories: 随笔
+categories: 总结
 tags: 随笔
 sidebar: false
 ---

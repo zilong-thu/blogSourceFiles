@@ -2,7 +2,7 @@ title: 前端开发中的几点感想
 sidebar: false
 date: 2015-05-06 20:04:03
 tags: Web-FE
-categories: Web-FE
+categories: 总结
 ---
 简记自己最近对于前端开发的几点感想。从2013年7月到现在，断断续续从事前端开发快两年了。文字很水，学识粗浅，大神轻喷。
 

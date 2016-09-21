@@ -1,8 +1,7 @@
 title: 2015年上半年小结与下半年学习规划
 date: 2015-08-12 00:03:29
 tags: Essays
-categories: 随笔
-banner: /images/2015/09/2015b1.jpg
+categories: 总结banner: /images/2015/09/2015b1.jpg
 ---
 
 这半年，学到的新技能屈指可数，下面就屈指数一数。

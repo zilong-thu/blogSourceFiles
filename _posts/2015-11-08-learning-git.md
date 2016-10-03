@@ -105,6 +105,8 @@ A-B
 master
 ```
 
+`--hard`是物理删除，直接把工作区的改动都删掉了。
+
 ### 修改刚才的提交的注释
 
 ```
@@ -118,6 +120,34 @@ git commit --amend
 交互式变基，即指 `git rebase -i <commit-id>`，然后自该 hash 之后（不含该 hash）的所有提交记录就会被呈现在文本编辑器里，按照提示编辑此文本，保存后即可实现对相应提交对象的修改。
 
 很明显，任何对提交历史的操作，都不应该在共有分支上进行。请确保此分支为私有。
+
+### 移动分支中的某些提交
+
+假如最开始的分支图是这样的：分支 server 是从 master checkout 出来的，还有一个分支 client 是从 server 的 D 提交处 checkout 出来的，
+
+```
+  master
+    ↓
+A-B-C       server
+     \       ↙
+      C-D-E-F
+         \
+          G-H
+            ↑
+          client
+```
+
+那么执行 `git rebase --onto master server client` 命令，会取出 client 分支，找出处于 client 分支和 server 分支的共同祖先之后的修改中的、既与 master 不同、又与 server 分支不同的那些提交，单独拿出来在 master 上面重演一遍。于是就会得到这样的提交图：
+
+```
+  master   client
+    ↓      ↙
+A-B-C-G'-H'       
+     \
+      C-D-E-F ← server
+```
+
+执行这样的命令时，最好相应的提交都是“原子性”的。
 
 
 ## 分支操作

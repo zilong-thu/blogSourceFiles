@@ -37,6 +37,8 @@ __Linux里，所有程序或系统装置都是文件__
 
 `mv ~/dir1/dir-03 ~` 把 `dir-03` 目录放到 `~` 目录下
 
+`pwd` 显示当前所在的目录的完整路径（print working directory）
+
 ## vi
 `i` 开始输入
 

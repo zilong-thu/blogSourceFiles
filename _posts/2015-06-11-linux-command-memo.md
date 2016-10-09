@@ -98,8 +98,10 @@ passwd: password updated successfully
 ## 网络操作
 
 ### `lsof`命令
-通过list open file命令可以查看到当前打开文件，在linux中所有事物都是以文件形式存在，包括网络连接及硬件设备。
+通过list open file命令可以查看到当前打开文件，在linux中所有事物都是以文件形式存在，包括网络连接及硬件设备。下面这个命令会列出所有占用了 8080 端口TCP连接的进程：
 
 ```
 lsof -i:8080
 ```
+
+`-i` 参数是用于过滤打开的文件的 `Internet address` 匹配其后面数字的。如果使用了 `-i4`，则只过滤 IPV4 的文件；`-i6` 则只查找 IPV6 的文件。

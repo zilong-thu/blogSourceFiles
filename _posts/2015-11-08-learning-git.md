@@ -150,6 +150,19 @@ A-B-C-G'-H'
 执行这样的命令时，最好相应的提交都是“原子性”的。
 
 
+### 提交标签
+
+可以为某个提交创建标签：
+
+`git tag -a <tag_name> <commit_id>`
+
+可以像下面这样，单独推送该标签到远程仓库：
+
+`git push origin <tag_name>`
+
+其他推送标签的方法可以参考：http://stackoverflow.com/questions/5195859/push-a-tag-to-a-remote-repository-using-git
+
+
 ## 分支操作
 
 ### 查看分支

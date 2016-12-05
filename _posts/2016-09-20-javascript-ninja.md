@@ -190,4 +190,95 @@ timers.start();
 </script>
 ```
 
+### 第 11 章  开发跨浏览器策略
+
+这一章提到了一个概念，“贪婪ID复制”。例如下面的例子所示的：
+
+<img src="/images/2016/11/js-ninja-chap-11.2.jpg" />
+
+
+### 第 12 章 洞悉特性、属性和样式
+
+要知道，元素的 attribute（特性）与 property（属性）并非同一个东西。大多数时候相应的读写操作会有相同的结果，但也有例外。而且，二者在性能上也有较大的差别。属性操作往往要比特性操作快很多。
+
+例如下面的性能测试代码：
+
+```
+<!DOCTYPE html>
+<html>
+<body>
+  <input type="text" id="test-1">
+</body>
+
+<script type="text/javascript">
+  var NUM = 5000000;
+  var input = document.getElementById('test-1');
+  var value;
+
+  console.time('test-1');
+  for (var i = 0; i < NUM; i++) {
+    value = input.getAttribute('value');
+  }
+  console.timeEnd('test-1');
+
+
+  console.time('test-2');
+  for (var i = 0; i < NUM; i++) {
+    value = input.value;
+  }
+  console.timeEnd('test-2');
+
+</script>
+</html>
+```
+
+结果是：
++ test-1: 231ms
++ test-2: 117ms
+
+差别非常明显。
+
+另外一个例子是 URL 规范化。
+
+```
+<a href="test.html" id="test-subject">test</a>
+
+var link = document.getElementById('test-subject');
+var linkHref_1 = link.getAttributeNode('href').nodeValue;  // test.html
+var linkHref_2 = link.getAttribute('href');  // test.html
+var linkHref_3 = link.href;  // file:///Users/wzl/Desktop/test.html
+```
+
+#### 获取计算样式
+
+广播一条API：
+
+W3C标准API里有一个可以获得元素的计算样式的方法：`window.getComputedStyle(element)`。IE > 8 可用。
+
+### 第 15 章 CSS 选择器引擎
+
+#### 15.1 W3C Selectors API
+
+主要就是两个方法： querySelector() 和 querySelectorAll()。比较有趣的事情是这几个：
+
++ 在今天来看，W3C Selectors API 其实已经有着非常好的浏览器覆盖率了。IE系列是“Partial support in IE8”，其他浏览器基本百分比支持。
++ 这两个API都可以在 Document、documentFragment、Element 这三类 DOM 节点上面发起调用。发起调用的那个节点叫做 `context node`（The term context node refers to the node upon which the method was invoked. 参考 [Selectors API Level 1](https://www.w3.org/TR/selectors-api)）。
++ querySelector 返回的是第一个匹配的元素，querySelectorAll 返回的是所有匹配的元素组成的静态 NodeList。这里的为了找到“第一个”所采用遍历策略，是按照文档顺序（document order）进行查找匹配的。文档顺序是指“a depth-first pre-order traversal of the DOM tree or subtree in question”，即深度优先、先序遍历，这样可以与HTML文本的顺序一致。附：深度遍历的三种遍历图如下（参考：[Tree Traversal | wiki pedia](https://en.wikipedia.org/wiki/Tree_traversal)）：
+
+<img src="/images/2016/11/depth-first-traversal.png" />
+
+
++ 有个小陷阱，下面的代码依然可以命中那个 strong 元素。这是因为对 querySelector/querySelectorAll 而言，无论指定 context node 为什么，其搜索总是从 document 根节点发起。只不过其返还结果里面会根据上下文节点进行过滤而已。
+
+```
+<body>
+  <div id="test-selector">
+    <strong>strong text</strong>
+  </div>
+  <div>div</div>
+</body>
+
+var testDiv = document.getElementById('test-selector');
+testDiv.querySelector('div strong');  // 可以命中那个 strong 元素
+```
 

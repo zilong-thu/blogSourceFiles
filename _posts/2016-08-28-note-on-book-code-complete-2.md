@@ -21,6 +21,16 @@ tags:
 
 <!-- more -->
 
+> Any fool can write code that a computer can understand. Good programmers write code that humans can understand. 
+> –- Martin Fowler
+
+>  “There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult.”
+> -- C.A.R. Hoare
+
+> Brooks Law: "Adding manpower to a late software project makes it later!"
+
+注：Fred Brooks 是 IBM System/360 OS 项目的软件主管。
+
 ### 第3章 三思而后行：前期准备
 
 

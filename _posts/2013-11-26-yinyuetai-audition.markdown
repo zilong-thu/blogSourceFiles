@@ -10,8 +10,11 @@ sidebar: false
 在58同城上投了几份简历，很有幸被叫去参加面试了，虽然最后仍然是悲剧，但面试经历又增加了，找工作就像谈恋爱，爱要越挫越勇~~
 
 下面回忆几个自己不会的不确定的题目。
+
 <!-- more -->
-###又是关于JavaScript的词法作用域
+
+### 又是关于JavaScript的词法作用域
+
 问下面的代码会输出什么结果：
 ``` javascript
 var tt = 'a';
@@ -30,7 +33,8 @@ test();
 ```
 毫无压力，两次运行test()的结果是一样的。
 
-###如何反转字符串
+### 如何反转字符串
+
 当时答了上来，但是对于具体所用的方法名没有说对。
 
 准确答案应该是这样：
@@ -40,7 +44,8 @@ var array = str.split('');
 str = array.reverse().join('');
 console.log(str);  // => 'gfedcba'
 ```
-###如何实现数组元素去重
+### 如何实现数组元素去重
+
 之前确实没有关注过JS算法方面的问题，当时就完全没有回答上来，甚至连暴力算法也没敢提。然后回来Google，找到两篇好的参考文章：
 
 <a href="http://www.ituring.com.cn/article/49791" target="_blank">图灵社区-WEB前端-JavaScript数组去重</a>
@@ -93,7 +98,8 @@ function ov3(a) {
 
 【补充】已经整理到一篇文章中：<a href="{{root_url}}/blog/2013/12/09/javascript-array-unique/">JavaScript数组去重方法汇总</a>。（2013-12-09）
 
-###关于JavaScript函数上下文
+### 关于JavaScript函数上下文
+
 问：JavaScript如何使对象element成为func函数内的上下文（即this的值）？
 
 答案：来自<a href="http://book.douban.com/subject/10549733/" class="douban_book" target="_blank" name="10549733">《JavaScript权威指南（第六版）》</a>。
@@ -115,20 +121,24 @@ o.m();            // => 调用它，不传入参数
 delete o.m;       // => 将临时方法删除
 ```
 
-###*JavaScript如何实现继承
+### *JavaScript如何实现继承
+
 需要做框架的人才会去使用继承，所以我不会。
 
 【待复习】
 
-###*常见的网页布局有哪几种
+### *常见的网页布局有哪几种
+
 纳尼，流式、浮动式、定位式，还有啥？
 
 【待学习】
 
-###如何使用jQuery制作焦点图
+### 如何使用jQuery制作焦点图
+
 当时太紧张，就没答上来。出了人家门口才想起来：擦，我甚至用原生JS做出过类似效果啊。无非是使用jQuery的fadeIn()、fadeOut()外加用setInterval()或者setTimeout()自定义一个操作图片left值的函数罢了（图片的定位是position:relative，刚开始设得稍大，动画结束时将left设为0即可）。
 
-###会PS切图吗？
+### 会PS切图吗？
+
 不会。
 
 【待学习】

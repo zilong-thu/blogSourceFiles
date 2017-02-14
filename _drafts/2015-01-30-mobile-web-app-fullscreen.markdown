@@ -20,7 +20,7 @@ layout: draft
 ```
 相应的图片：
 
-<div id="image-to-load-01" style="width: 300px; height: 60px;padding: 20px;border: 1px solid #ccc; background-color: #4369FF; cursor: pointer;" data-src="/images/blog/2015/01/touch.qunar.jpg">点击下载图片。图片大小约130KB。</div>
+<div id="image-to-load-01" style="width: 300px; height: 60px;padding: 20px;border: 1px solid #ccc; background-color: #4369FF; cursor: pointer;" data-src="/images/2015/01/touch.qunar.jpg">点击下载图片。图片大小约130KB。</div>
 
 未完待续。。。
 

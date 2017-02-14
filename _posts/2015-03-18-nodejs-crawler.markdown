@@ -15,7 +15,7 @@ sidebar: false
 
 [这篇文章：网络爬虫基本原理(一)](http://www.cnblogs.com/wawlian/archive/2012/06/18/2553061.html)其实讲解地已经比较清楚了，尤其是那张图，在此引用一下：
 
-<img src="/images/blog/2015/03/crawler_01.png" class="img-invert">
+<img src="/images/2015/03/crawler_01.png" class="img-invert">
 
 使用NodeJS写的网络爬虫已有不少示例（例如[Create a simple web spider in node.js  by Licson](http://licson.net/post/create-a-simple-web-spider-in-node-js/)），思路大体一致，使用的包也大同小异，重点是要搞清楚：想从页面中获取什么？自己关心什么？然后要据此使用特定的正则表达式等词法分析手段。
 

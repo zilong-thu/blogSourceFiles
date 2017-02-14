@@ -16,7 +16,7 @@ categories: JavaScript
 
 很赞的是它不支持老旧浏览器：IE版本<10的都不支持。
 
-<img src="/images/blog/2015/02/zepto_intro_03.jpg" style="width: 360px; margin: 0 auto;">
+<img src="/images/2015/02/zepto_intro_03.jpg" style="width: 360px; margin: 0 auto;">
 
 ####自定义的Building
 最好是去[GitHub下载其源码](https://github.com/madrobby/zepto)，然后根据自己的实际需求，参考各模块的功能说明，自定义building模块，例如：
@@ -86,4 +86,4 @@ compression factor: 5.0
 ###AmazeUI
 [AmazeUI](http://amazeui.org/)是“中国首个开源 HTML5 跨屏前端框架。”
 
-<img src="/images/blog/2015/02/mascot.png" style="width: 360px; margin: 0 auto;">
+<img src="/images/2015/02/mascot.png" style="width: 360px; margin: 0 auto;">

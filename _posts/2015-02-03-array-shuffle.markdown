@@ -9,7 +9,7 @@ sidebar: false
 
 我就是个算法小白……痴。
 
-<img src="/images/blog/2015/01/QQimg201501.gif">
+<img src="/images/2015/01/QQimg201501.gif">
 
 <a href="http://bost.ocks.org/mike/shuffle/" target="_blank">Fisher–Yates Shuffle, January 14, 2012 </a> 这篇文章用JavaScript数组讲解了洗牌算法，并且用D3.js演示各自的重排序效果。
 

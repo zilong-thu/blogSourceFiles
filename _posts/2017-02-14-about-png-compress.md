@@ -5,7 +5,17 @@ tags: 图片压缩
 categories:
 ---
 
-原始图片的体积是433KB，格式为 PNG，尺寸为 2560×920。
+原始图片的体积是433KB，格式为 PNG，尺寸为 2560×920。【待补充图片测试用例】
+
+这里共使用了5种工具:
+
++ 有损压缩工具 ImageOptim
++ GUI 工具 ImageOptim
++ Zopfli
++ OptiPNG
++ pngcrush
+
+<!-- more -->
 
 ## imagemin-pngquant
 

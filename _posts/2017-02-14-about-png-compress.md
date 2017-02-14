@@ -23,9 +23,13 @@ imagemin([PATH], './build', {
 });
 ```
 
-通过 `{quality: '99-100’}` 这样的配置，将图片压缩至 156 KB。
+通过 `{quality: '99-100’}` 这样的配置，将图片压缩至 156 KB。肉眼的对比也会发现，有可以察觉的差别，但是并不影响图片质量。
 
-+ [pngquant](https://pngquant.org/) 是一个命令行无损压缩工具。
+相关的 [pngquant](https://pngquant.org/) 是一个命令行有损压缩（lossy compression）工具。可以通过 homebrew 进行安装：
+
+```
+$ brew install pngquant
+```
 
 ## ImageOptim
 
@@ -57,6 +61,10 @@ $ make zopflipng
 
 编译完成之后，可以在本目录下生成可执行文件 zopflipng。
 
+```
+$ ./zopflipng images/bg.png build/bg_zopfli.png
+```
+
 433 KB 的图片，可以被压缩到 207 KB。可知，在前面用 ImageOptim 进行压缩时，其选择了 Zopfli 的压缩结果。
 
 阅读资料：
@@ -72,13 +80,13 @@ $ make zopflipng
 Mac OS X可以用 `homebrew` 安装：
 
 ```
-brew install optipng
+$ brew install optipng
 ```
 
 在最高压缩率情况下运行：
 
 ```
-optipng -o7 ./images/bg.png -out build/bg-o7.png
+$ optipng -o7 ./images/bg.png -out build/bg-o7.png
 ```
 
 可以将该图片由 432 KB 压缩至 240 KB。
@@ -91,19 +99,19 @@ optipng -o7 ./images/bg.png -out build/bg-o7.png
 PS：node 如果要用，可以先安装并按照它的示例代码来运行（不过，我实际上没有运行成功）：
 
 ```
-npm install --save imagemin-optipng
+$ npm install --save imagemin-optipng
 ```
 
 ## pngcrush
 
 ```
-brew install pngcrush
+$ brew install pngcrush
 ```
 
 可以像下面这样使用 pngcrush：
 
 ```
-pngcrush -reduce -brute build/bg_crushed.png build/bg_crushed_2.png
+$ pngcrush -reduce -brute build/bg_crushed.png build/bg_crushed_2.png
 ```
 
 一些阅读资料：

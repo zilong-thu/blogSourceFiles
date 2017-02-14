@@ -61,7 +61,11 @@ $ brew install pngquant
 
 ## Zopfli
 
+Zopfli 的介绍：
+
 > Zopfli is an encoder implementation of DEFLATE, a compression method commonly used in PNG format (among many other usages, e.g. ZIP, etc), designed to produce the likely smallest compressed output. Since it is a lossless transformation, a PNG file that is recompressed with Zopfli still retains all the pixels as expected.
+
+好像得自己编译（当然，也可以把编译后的 `zopflipng` 程序设置为全局的命令）：
 
 ```
 $ git clone https://github.com/google/zopfli.git

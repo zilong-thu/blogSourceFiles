@@ -16,7 +16,7 @@ sidebar: false
 
 <script type="text/javascript">
 (function(){
-	var url = '/stylesheets/style_practical_css3.css';
+	var url = '/css/style_practical_css3.css';
 	var link =  document.createElement("link");
 	link.rel = "stylesheet";
 	link.type = "text/css";

@@ -283,6 +283,19 @@ git diff <commit-id-1> <commit-id-2>
 
 `git blame -L <rowNumber>,<row increment number>`
 
+
+## checkout
+
+`checkout` 可以用于切换分支，也可以用于从某次体积记录中把某个或该提交的全部文件拿到工作目录中。
+
+```
+$ git checkout branch_name
+$ git checkout <commit-id>
+$ git checkout <commit-id> path/to/file
+```
+
+参考阅读：[Reset or revert a specific file to a specific revision using Git?](http://stackoverflow.com/questions/215718/reset-or-revert-a-specific-file-to-a-specific-revision-using-git)
+
 ---------------------------
 
  

@@ -1,5 +1,5 @@
 ---
-title: Linux常用命令笔记（二）
+title: Linux常用命令笔记（二：变量）
 date: 2017-03-12 18:30:00
 tags: Linux
 categories: Linux
@@ -69,7 +69,29 @@ else
 fi
 ```
 
-上面的脚本，`-ne` 表示“不等于”的意思（not equal to）。
+上面的脚本，`-ne` 表示“不等于”的意思（not equal to）。而 `[`、`]` 及其中间的内容，属于条件表达式（Conditional expressions）的一种。条件表达式可以用来测试文件属性，或者对字符串、算术进行比较。
 
 
+## 获取程序的返回值
+
+假设我们有这样一个 C++ 程序：
+
+```
+#include<iostream>
+using namespace std;
+int main()
+{
+   cout<<"Hello world!"<<endl;
+   return 0;
+}
+```
+
+使用 g++ 编译后执行。想要获得该程序的返回值（也就是0），可以这样：
+
+```
+# 假设编译后得到的可执行文件为 a.out
+./a.out
+
+echo $?  # 输出 0
+```
 

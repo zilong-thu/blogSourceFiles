@@ -33,6 +33,8 @@ var a = 1;
 
 ## 函数
 
+### 函数即对象
+
 > 函数其实就是对象。使函数不同于其他对象的决定性特点是函数存在一个被称为 `[[Call]]` 的内部属性。
 > ……`[[Call]]` 是函数独有的，表明该对象可以被执行。由于仅函数拥有该属性，ECMAScript 定义 `typeof` 操作符对任何具有 `[[Call]]` 属性的对象返回 “function”。这在过去曾经导致一些问题，因为某些浏览器曾经在正则表达式中包含 `[[Call]]` 属性，导致后者被错误鉴别为函数。现在，所有浏览器行为都一致，`typeof` 不会再将正则表达式鉴别为函数了。
 
@@ -61,3 +63,46 @@ console.log(func1.name);  // func
 + {函数体}
 
 其中，函数名、所有的形参，也都属于该函数作用域。这就是为什么在该函数内部，`func` 会屏蔽外部的变量。
+
+### 函数重载
+
+函数重载是一种设计目标，希望可以让一个函数具有多个签名。__函数签名__，是由函数名、参数个数、参数类型、返回值类型组成的。JavaScript 的函数其实根本没有签名，因为它对函数参数的数量与类型完全不做限制。对返回值的类型也一样，没有任何限制。所以可以说 JavaScript 函数是天然可重载的，也可以说 JavaScript 函数没有重载这个概念。
+
+
+### bind
+
+JavaScript 函数的 `call`、`apply` 方法，都只是临时指定一个函数调用对象（`this`），但 ES5 所定义的新方法 `Function.prototype.bind()` 则差异较大。
+
++ `bind` 方法会返回一个新函数，并不会更改原始函数任何东西
++ `bind` 不但会绑定 `this` 对象，同时也可以绑定参数，这两个被绑定后，是不可更改的
+
+例如下面的代码：
+
+```
+function say(label) {
+  console.log(label + ': ' + this.name);
+}
+
+var person1 = {
+  name: 'person1'
+};
+
+/**
+ * test 1
+ */
+var say1 = say.bind(person1, 'say2');
+
+say1('say2222');  // 会输出 say2: person1，而不是 say2222: person1
+
+/**
+ * test 2
+ */
+var person2 = {
+  name: 'person2'
+};
+
+say1.call(person2);  // 输出 say2: person1
+```
+
+总结来说，`bind` 的设置，是**永久**的。
+

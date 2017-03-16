@@ -109,3 +109,38 @@ var p3 = new say1('p3');  // 输出：say2: undefined
 
 总结来说，`bind` 所产生的新函数，除非用 new 调用，是**永久**的。
 
+## 对象
+
+### 属性探测vs属性值探测
+
+在实际的开发中，应当区分属性探测与属性值探测之间的区别。前者关注对象的某个属性是否存在、是否为自有（而非来自原型链），后者则关注属性的值（value）而非属性（property）本身。
+
+`in` 操作符是为了解决“对象的属性是否可达”这个问题而存在的。它完全不管属性指向的值。而`hasOwnProperty`则忽略原型链，只探测对象的自有属性。自有属性是 JavaScript 在对象上调用其内部接口 `[[PUT]]` 方法添加上的。
+
+### 关于访问器属性
+
+对象的属性分为两类，第一类是最为常见的数据属性，`[[PUT]]` 方法默认创建的都是数据属性；另一类是访问器属性。访问器属性的一个例子如下。
+
+```
+var obj = {
+  _name: 'WangZilong',
+
+  get name() {
+    console.log('you are getting name property.');
+    return this._name;
+  },
+
+  set name(value) {
+    this._name = value;
+    console.log('you have set a new name.');
+  }
+}
+
+console.log(obj.name);
+
+obj.name = 'test';
+console.log(obj.name);
+```
+
+如果想实现一个PUB/SUB模式，又想偷懒，那么可以使用访问器属性。访问器属性是在 ES5 里定义的，除了 IE8及以下浏览器、iOS5.1及之前浏览器不支持之外，其他环境中基本都支持访问器属性。
+

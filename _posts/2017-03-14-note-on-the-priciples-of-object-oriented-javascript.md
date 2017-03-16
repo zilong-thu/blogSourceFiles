@@ -146,3 +146,17 @@ console.log(obj.name);
 
 其实，在前端生态圈里，avalon、vue 这样的 MVC 框架，就是使用了访问器属性（以及借助 `Object.defineProperty()` 方法），来实现所需的“双向绑定”功能。
 
+
+## 构造函数
+
+> 每个对象在创建时都自动拥有一个构造函数属性，其中包含了一个指向其构造函数的引用。那些通过对象字面量形式或 `Object` 构造函数创建出来的范用对象，其构造函数属性指向 `Object`；那些通过自定义构造函数创建出来的对象，其构造函数属性指向创建它的构造函数。
+
+```
+var obj = {name: 'obj'};
+
+obj.constructor;  // function Object() { [native code] }
+
+obj.hasOwnProperty('constructor');  // 输出 false
+```
+
+我们来针对 `constructor` 这个关键词/属性，延伸讨论一下。在 ES6 里面，明确了关键字 `class` 的用法：定义一个“类”，该类可以被 `new` 操作符调用，生成一个实例对象。

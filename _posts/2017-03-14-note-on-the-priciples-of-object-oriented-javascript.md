@@ -74,7 +74,8 @@ console.log(func1.name);  // func
 JavaScript 函数的 `call`、`apply` 方法，都只是临时指定一个函数调用对象（`this`），但 ES5 所定义的新方法 `Function.prototype.bind()` 则差异较大。
 
 + `bind` 方法会返回一个新函数，并不会更改原始函数任何东西
-+ `bind` 不但会绑定 `this` 对象，同时也可以绑定参数，这两个被绑定后，是不可更改的
++ `bind` 不但会绑定 `this` 对象，同时也可以绑定参数，这两个被绑定后，绝大部分情况下是不可更改的
++ 只有该新函数使用 new 操作符调用时，相应的 `this` 绑定会失效，但是其他的参数则依然是绑定着的。
 
 例如下面的代码：
 
@@ -102,7 +103,9 @@ var person2 = {
 };
 
 say1.call(person2);  // 输出 say2: person1
+
+var p3 = new say1('p3');  // 输出：say2: undefined
 ```
 
-总结来说，`bind` 的设置，是**永久**的。
+总结来说，`bind` 所产生的新函数，除非用 new 调用，是**永久**的。
 

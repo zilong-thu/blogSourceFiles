@@ -160,3 +160,60 @@ obj.hasOwnProperty('constructor');  // 输出 false
 ```
 
 我们来针对 `constructor` 这个关键词/属性，延伸讨论一下。在 ES6 里面，明确了关键字 `class` 的用法：定义一个“类”，该类可以被 `new` 操作符调用，生成一个实例对象。
+
+构造函数有个小特点：如果创建新实例时，没有什么参数需要传给构造函数，那么构造函数后面是可以不带圆括号的。例如日期：
+
+```
+var a = new Date;
+
+// 等价于：
+var a = new Date();
+```
+
+但是，这样的编码是**不清晰**的！看不出来是函数调用。所以，不推荐省略圆括号。
+
+
+## 原型即对象
+
+原型本质上也是对象。**只有函数才有 `prototype` 属性。**
+
+```
+function Person(name) {
+  this.name = name || '';
+}
+
+var creature = {
+  constructor: Person,
+  sayName: function() {
+    console.log(this.name);
+  }
+};
+
+
+Person.prototype = creature;
+
+var p = new Person('Peter');
+
+p.sayName();  // Peter
+
+console.log(p instanceof Person);  // true
+
+
+Person.prototype.sayAge = function() {
+  if (this.age !== undefined) {
+    console.log('I am ', this.age, ' years old.');
+  } else {
+    console.log('I do not know my age yet...');
+  }
+}
+
+p.sayAge();  // I do not know my age yet...
+
+// 这个时候，creature 对象是 `sayAge` 方法的实际拥有者
+console.log(creature.hasOwnProperty('sayAge'));  // true
+creature.isPrototypeOf(p);  // true
+```
+
+> 构造函数、原型对象和对象实例之间的关系，最有趣的一个方面也许就是对象实例和构造函数之间没有直接关系。不过对象实例和院线对象，以及原型对象和构造函数之间都有直接联系。
+> 
+> —— page 59

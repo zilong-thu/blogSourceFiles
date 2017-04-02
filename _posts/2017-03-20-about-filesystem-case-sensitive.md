@@ -23,6 +23,8 @@ Module not found: Error: Can't resolve './Picker' in 'some-file'
 
 最后，通过修改文件名，就解决了这个问题。
 
+<!-- more -->
+
 
 ## 现状
 

@@ -117,3 +117,9 @@ $ rm server.pass.key
 ## 实现一个简单的静态文件服务器
 
 
+## 当前使用了 HTTP/2 技术的公司
+
++ [淘宝首页](https://www.taobao.com/)
++ [又拍云](https://www.upyun.com/)
+
+

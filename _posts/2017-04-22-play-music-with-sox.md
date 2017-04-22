@@ -19,7 +19,7 @@ Mac 下面执行下面的命令即可安装：
 brew install sox
 ```
 
-安装好之后，可以通过 `play` 命令来播放音乐：
+安装好之后，可以通过 `play` 命令来播放音乐（这首歌是在我博客另一篇博文[HTML5 audio 实验](http://borninsummer.com/2013/11/01/html5-audio/)里面用的音乐）：
 
 ```
 $ play ~/Downloads/naruto_xia_ri_xing.mp3

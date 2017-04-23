@@ -9,7 +9,7 @@ categories:
   - MacOS
 ---
 
-## 步骤
+## 基本使用
 
 今日突发奇想，想在命令行下播放音乐。找到了一个现成的程序，SoX（Sound eXchange）。
 
@@ -28,6 +28,14 @@ $ play ~/Downloads/naruto_xia_ri_xing.mp3
 效果如下：
 
 <img src="/images/2017/04/sox-play.png">
+
+## 单曲循环
+
+```
+play ~/Downloads/naruto_xia_ri_xing.mp3 repeat 0
+```
+
+`repeat` 后面加上希望循环的次数，0表示无限循环。任何时候想要停止，按下 `ctrl c` 即可。
 
 
 ## 参考阅读

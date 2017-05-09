@@ -247,6 +247,22 @@ git stash save "这是一个暂存"
 
 `git log -p`，会给出提交历史，并且包含了每次提交的逐行增删改对比。
 
+### 可视化提交历史
+
+git 本身提供了一个可以很好地画出提交分支图历史的命令。
+
+```
+git log --pretty=format:"%h %s" --graph
+
+# `--pretty` 参数可以指明显示提交记录的格式。其值可以是 `oneline` | `short` | `full` | `fuller` | `format`。其中 `format` 可以指定一个自定义格式。
+# `--graph` 参数用来指示 git 借助 ASCII 字符来绘制分支、合并历史。
+```
+
+上面这个命令可以输出类似这样的字符图：
+
+<img src="/images/2017/05/git-log-graph.png">
+
+
 ### 通过提交信息查找提交历史
 
 这对应一个比较少的场景。

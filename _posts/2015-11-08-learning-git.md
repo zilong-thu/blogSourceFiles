@@ -223,7 +223,7 @@ git stash apply
 
 `git stash` 默认执行的是 `git stash save`，可以给这个储藏添加一条备注：
 
-````
+```
 git stash save "这是一个暂存"
 ```
 
@@ -235,6 +235,7 @@ git stash save "这是一个暂存"
 
 
 ## 裸版本库
+
 【待学习补充】
 
 ## 提交历史

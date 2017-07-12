@@ -4,9 +4,7 @@ date: 2017-04-22 23:18:00
 tags: 
   - SoX
   - Command Line
-categories: 
-  - Linux
-  - MacOS
+categories: Linux
 ---
 
 ## 基本使用

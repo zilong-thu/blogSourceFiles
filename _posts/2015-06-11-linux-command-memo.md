@@ -35,11 +35,26 @@ __Linux里，所有程序或系统装置都是文件__
 
 ## 目录与文件操作
 
+### 移动文件、目录
+
 `mv ~/dir1/dir-03 ~` 把 `dir-03` 目录放到 `~` 目录下
+
+### 查看当前完整的工作目录路径
 
 `pwd` 显示当前所在的目录的完整路径（print working directory）
 
+### 查看文件、目录体积
+
+`du` -- display disk usage statistics.
+
+常用参数：
+
+`-h`：Human-readable，即以可读性好的方式给出体积数值
+
+`-s`：This option means it will not list the size for each subdirectory, only the total size.
+
 ## vi
+
 `i` 开始输入
 
 `:wq!`  保存并退出
@@ -51,6 +66,7 @@ __Linux里，所有程序或系统装置都是文件__
 ## 压缩文件操作
 
 `tar -C /usr/local -xzf node-v0.10.34-linux-x86.tar.gz` 把后面的压缩文件解压缩到目录`/usr/local`下
+
 
 ## 用户
 
@@ -98,6 +114,7 @@ passwd: password updated successfully
 ## 网络操作
 
 ### `lsof`命令
+
 通过list open file命令可以查看到当前打开文件，在linux中所有事物都是以文件形式存在，包括网络连接及硬件设备。下面这个命令会列出所有占用了 8080 端口TCP连接的进程：
 
 ```

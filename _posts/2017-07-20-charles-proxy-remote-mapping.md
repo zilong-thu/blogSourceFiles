@@ -5,9 +5,12 @@ tags: Charles
 categories: Charles
 ---
 
+包含两部分内容：
 
-+ Charles Proxy Remote Mapping
-+ HTTPS 
++ HTTPS 抓包配置
++ Charles 请求映射（Proxy Remote Mapping）
+
+<!-- more -->
 
 ## https 抓包配置
 
@@ -32,7 +35,7 @@ categories: Charles
 <img src="/images/2017/07/pic-5-443-port.jpg" />
 
 
-## 请求映射
+## 请求映射（Proxy Remote Mapping）
 
 选择 charles 的 Tools —> Map Remote，在弹出的 Map Remote Settings 里面点击【Add】：
 

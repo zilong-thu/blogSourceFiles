@@ -25,15 +25,15 @@ categories: Charles
 
 在 Charles 中启用 SSL Proxy，菜单 Proxy → SSL Proxy Settings。
 
-<img src="/images/2017/07/pic-4-ssl-proxing.png" />
+<img src="/images/2017/07/pic-4-ssl-proxing.jpg" />
 
 点击【Add】，在 Edit Location 对话框里，把 443 端口添加进去。点击OK。
 
-<img src="/images/2017/07/pic-5-443-port.png" />
+<img src="/images/2017/07/pic-5-443-port.jpg" />
 
 
 ## 请求映射
 
 选择 charles 的 Tools —> Map Remote，在弹出的 Map Remote Settings 里面点击【Add】：
 
-<img src="/images/2017/07/pic-6-remote-map.png" />
+<img src="/images/2017/07/pic-6-remote-map.jpg" />

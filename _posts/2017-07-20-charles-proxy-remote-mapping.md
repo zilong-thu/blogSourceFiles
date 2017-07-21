@@ -9,6 +9,7 @@ categories: Charles
 
 + HTTPS 抓包配置
 + Charles 请求映射（Proxy Remote Mapping）
++ iOS 设备配置证书
 
 <!-- more -->
 
@@ -40,3 +41,9 @@ categories: Charles
 选择 charles 的 Tools —> Map Remote，在弹出的 Map Remote Settings 里面点击【Add】：
 
 <img src="/images/2017/07/pic-6-remote-map.jpg" />
+
+
+## iOS 设备配置证书
+
+通过上面的配置，安卓设备已经可以直接代理 HTTPS 的请求了。但是 iOS 要更为严格一些，需要再给手机配置一下证书。给手机设置代理服务后，打开 Safari 访问 [https://chls.pro/ssl](https://chls.pro/ssl)，根据提示安装证书，之后就可以代理 HTTPS 请求到 HTTP 了。
+

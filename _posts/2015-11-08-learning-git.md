@@ -306,9 +306,15 @@ git diff <commit-id-1> <commit-id-2>
 `checkout` 可以用于切换分支，也可以用于从某次体积记录中把某个或该提交的全部文件拿到工作目录中。
 
 ```
-$ git checkout branch_name
+$ git checkout <branch-name>
 $ git checkout <commit-id>
 $ git checkout <commit-id> path/to/file
+```
+
+还可以用于从某个分支里取出其最新的某个特定文件，即 git-checkout specific files from another branch：
+
+```
+$ git checkout <branch-name> -- <file-name>
 ```
 
 参考阅读：[Reset or revert a specific file to a specific revision using Git?](http://stackoverflow.com/questions/215718/reset-or-revert-a-specific-file-to-a-specific-revision-using-git)

@@ -19,9 +19,39 @@ C 端产品与 B 端产品差异巨大。
 
 前端需要解决这些移动端特有的交互问题：
 
-+ 下拉刷新（pull to refresh）
-+ 上拉无限加载
++ 下拉刷新/上拉无限加载（touchEvents）
 + 快速点击响应（例如 fastClick.js）
++ 元素吸顶（sticky）
+
+即使页面效果在开发机器上通过 Chrome/Simulator 等调试通过，在移动 web 上还是可能会出现不一致。举个例子，PC 浏览器对于 `position: fixed` 的实现是完全合乎标准，而且高性能的，但是在 iOS 下面，绝对定位的元素如果在 DOM 树上是 `overflow: scroll` 的容器元素的后代节点，那么容器在滚动时，就会引起绝对定位元素不停抖动。此时就需要将绝对定位元素与滚动容器解除父子/祖先后代关系。
+
+``` html
+<style type="text/css">
+.scroll-y {
+  height: 100%;
+  padding-top: 40px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.fixed {
+  position: fixed;
+  height: 40px;
+}
+</style>
+
+# 下面的 DOM 结构会抖动
+
+<div class="scroll-y">
+  <div class="fixed">fixed element</div>
+  <div class="content">很多内容在这里</div>
+</div>
+
+# 下面的 DOM 结构不会抖动
+<div class="fixed">fixed element</div>
+<div class="scroll-y">
+  <div class="content">很多内容在这里</div>
+</div>
+```
 
 
 ## Hybrid 环境判断
@@ -33,7 +63,6 @@ C 端产品与 B 端产品差异巨大。
 
 + 图片懒加载
 + 小图片内联为 base64 格式
-+ 
 
 ## 《跨终端Web》by 徐凯
 

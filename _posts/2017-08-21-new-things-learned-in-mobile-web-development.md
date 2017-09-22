@@ -78,4 +78,11 @@ C 端产品与 B 端产品差异巨大。
 
 + Charles
 + XCode Simulator
++ Browser Sync
+
+## 移动端的表单
+
+即使用 jQuery，也可以较方便地实时收集表单数据：在 `form` 元素上可以监听 `input` 事件，实时进行处理。
+
+Android/iOS 设备都会在可输入元素获得焦点时自动唤起软键盘（soft keyboard）并且将页面上推，使得输入元素不至于被软键盘遮挡。不过，要确保页面不会有什么特殊的布局，好比在一些 `height: 100%` 的页面容器。
 

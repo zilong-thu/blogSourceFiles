@@ -5,8 +5,6 @@ tags:
 categories: 算法
 ---
 
-## 思路
-
 <img src="/images/2017/09/insert-sort.jpg">
 
 <!-- more -->
@@ -14,7 +12,7 @@ categories: 算法
 
 ## 代码（JavaScript 实现）
 
-```
+``` javascript
 var A = [1, 3, 5, 2, 27, 7, 100, 9, 109, 10, 87, 800, 988, 7665, 83790, 28, 34];
 var B = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 /**

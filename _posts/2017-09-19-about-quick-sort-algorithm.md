@@ -11,11 +11,13 @@ categories: 算法
 
 在高速的实现中，快排是一个不稳定的算法，即它不能保证原来相等的值的位置不变。
 
+<!-- more -->
+
 ## 思路
 
 `pivot`，为“中枢、支点”的意思。
 
-```
+``` javascript
 // 选取中间值为基准点、高效的实现示例
 function quickSort(A) {
   if (A.length <= 1) {

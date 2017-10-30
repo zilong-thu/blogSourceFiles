@@ -53,6 +53,15 @@ __Linux里，所有程序或系统装置都是文件__
 
 `-s`：This option means it will not list the size for each subdirectory, only the total size.
 
+### 查看某个程序的实际路径
+
+`which`：locate a program file in the user's path。例如：
+
+```
+$ which git
+# 输出  /usr/bin/git
+```
+
 ## vi
 
 `i` 开始输入

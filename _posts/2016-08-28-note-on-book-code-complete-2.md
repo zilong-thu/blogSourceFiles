@@ -4,6 +4,9 @@ date: 2016-08-28 21:05:43
 tags: 
   - 代码大全
   - 读书笔记
+  - Code Complete
+  - 随笔
+categories: 读书笔记
 ---
 
 ### 记

@@ -5,8 +5,11 @@ tags: 算法
 categories: 算法
 ---
 
+这里用 JavaScript 实现一个二叉搜索树。二叉搜索树可以很方便地进行排序。下面的实现比较简单。
 
-这里用 JavaScript 实现一个二叉搜索树。
+AVL自平衡二叉树、红黑树待研究。
+
+<!-- more -->
 
 ``` javascript
 function BinarySearchTree() {

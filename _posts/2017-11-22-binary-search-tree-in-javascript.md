@@ -5,13 +5,16 @@ tags: 算法
 categories: 算法
 ---
 
-这里用 JavaScript 实现一个二叉搜索树。二叉搜索树可以很方便地进行排序。下面的实现比较简单。
+这里用 JavaScript 实现一个二叉搜索树。二叉搜索树可以很方便地进行排序。下面的实现比较简单，很容易就会出现非平衡二叉树。G.M. Adelson-Velsky 和 E.M. Landis 在 1962 年的论文《An Algorithm For The Organization Of Information》中提出了一种可以实现自平衡二叉树，后世称为 AVL 树。
 
-AVL自平衡二叉树、红黑树待研究。
+除了 AVL 树，还有很多其他的平衡二叉树的实现，例如 [AVL树，红黑树，B树，B+树，Trie树都分别应用在哪些现实场景中？](https://www.zhihu.com/question/30527705) 就是个不错的入门级参考，可以大致了解这些平衡树的特点、区别。看起来，红黑树是应用最广泛的。
 
 <!-- more -->
 
 ``` javascript
+/**
+ * 二叉搜索树构造函数
+ */
 function BinarySearchTree() {
   var Node = function(key) {
     this.key = key;
@@ -21,6 +24,9 @@ function BinarySearchTree() {
 
   var root = null;
 
+  /**
+   * 插入值
+   */
   this.insert = function(key) {
     var newNode = new Node(key);
 
@@ -184,5 +190,4 @@ console.log('\n先序遍历二叉树 =>\n');
 bst.preOrderTraverse(function(node) {
   console.log(node.key);
 });
-
 ```

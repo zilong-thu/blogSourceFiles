@@ -7,9 +7,7 @@ categories: 算法
 
 最少硬币问题找零问题是说，已知某种硬币系统 [C<sub>i</sub>, ...]，以及期望凑齐的找零值 Amount，找到硬币数量最少的那个找零方案：
 
-∑N<sub>i</sub>C<sub>i</sub> = Amount
-
-且 ∑N<sub>i</sub> 最小。
+∑N<sub>i</sub>C<sub>i</sub> = Amount 且 ∑N<sub>i</sub> 最小
 
 <!-- more -->
 

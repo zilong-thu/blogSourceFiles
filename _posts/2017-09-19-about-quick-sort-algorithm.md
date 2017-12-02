@@ -162,4 +162,4 @@ console.log('arr3 => ', arr3);
 
 1. https://en.wikipedia.org/wiki/Quicksort
 2. http://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html
-3. 《学习JavaScript数据结构与算法》
+3. Loiane Groner. 学习JavaScript数据结构与算法[M], 北京: 人民邮电出版社, 2015.

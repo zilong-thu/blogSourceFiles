@@ -39,8 +39,16 @@ $ convert -quality 70 -strip 1.jpg 1.1.jpg
 
 https://www.ibm.com/developerworks/cn/linux/l-graf2/index.html
 
+http://www.netingcn.com/imagemagick-crop.html
+
 ```
 convert pub.png -crop 280x101-0+2 pub-2.png
+```
+
+假设我们有一章 4160X2340 的图片，想要裁剪掉一部分，保留居中的部分，可以像下面这样，意思是将高度变为 1900 像素。
+
+```
+convert outside.jpeg -gravity center -crop 4160x1900+0+0 outside-3.jpeg
 ```
 
 ## 生成 GIF

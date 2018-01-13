@@ -1,13 +1,12 @@
 ---
 title: About Web SPA Data Flow
 date: 2017-05-09 18:00:00
-tags: 
+tags:
   - RxJS
   - SPA
   - React.js
   - Observable
-categories: 
-  - WebFE
+categories: Web-FE
 ---
 
 <!-- more -->

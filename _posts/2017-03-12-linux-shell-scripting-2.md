@@ -2,7 +2,7 @@
 title: Linux常用命令笔记（二：变量）
 date: 2017-03-12 18:30:00
 tags: Linux
-categories: Linux
+categories: Operating System
 ---
 
 ## 变量

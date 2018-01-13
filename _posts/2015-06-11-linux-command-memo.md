@@ -3,7 +3,7 @@ title: Ubuntu Linux常用命令笔记
 sidebar: false
 date: 2015-06-11 14:15:02
 tags: Linux
-categories: Linux
+categories: Operating System
 
 ---
 

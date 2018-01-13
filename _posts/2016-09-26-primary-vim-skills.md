@@ -2,7 +2,7 @@
 title: vim 简单操作笔记
 date: 2016-09-24 11:29:37
 tags: vim
-categories: vim
+categories: 编辑器
 ---
 
 vim 是***

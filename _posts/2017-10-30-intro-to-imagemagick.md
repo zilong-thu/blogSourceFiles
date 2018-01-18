@@ -1,8 +1,10 @@
 ---
 title: ImageMagick 简单入门
 date: 2017-10-30 22:33:27
-tags: ImageMagick
-categories: Linux
+tags:
+  - ImageMagick
+  - 图像处理
+categories: 图像处理
 ---
 
 [ImageMagick](http://www.imagemagick.org/script/index.php) 是一款可以运行在 Linux/Unix/Windows/MacOS （现在甚至支持 iOS、Android）下的免费开源图片处理程序。使用 ImageMagick 可以进行图片的拉伸、裁剪、缩放、格式转换、生成 GIF 、添加文字/图案等各种操作。

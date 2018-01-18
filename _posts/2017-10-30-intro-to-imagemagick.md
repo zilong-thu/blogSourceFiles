@@ -9,6 +9,9 @@ categories: 图像处理
 
 [ImageMagick](http://www.imagemagick.org/script/index.php) 是一款可以运行在 Linux/Unix/Windows/MacOS （现在甚至支持 iOS、Android）下的免费开源图片处理程序。使用 ImageMagick 可以进行图片的拉伸、裁剪、缩放、格式转换、生成 GIF 、添加文字/图案等各种操作。
 
+
+## 安装
+
 MacOS 下可以方便地使用 Homebrew 进行安装：
 
 ```
@@ -25,7 +28,9 @@ ImageMagick 的最新版本目前已经是 7.* 以上了。建议安装最新版
 
 <!-- more -->
 
-## 压缩 JPEG 图片
+## 使用
+
+### 压缩 JPEG 图片
 
 ```
 # 查看系统中安装的 iamgeMagick 的版本
@@ -37,7 +42,7 @@ $ convert -version
 $ convert -quality 70 -strip 1.jpg 1.1.jpg
 ```
 
-## 裁剪图片
+### 裁剪图片
 
 https://www.ibm.com/developerworks/cn/linux/l-graf2/index.html
 
@@ -54,5 +59,41 @@ convert outside.jpeg -gravity center -crop 4160x1900+0+0 outside-3.jpeg
 convert outside.jpeg -gravity southeast -crop 3200x1371+0+91 outside-2.jpeg
 ```
 
-## 生成 GIF
+### 生成 GIF
 
+
+### png8 & png24
+
+使用 imageMagick 可以方便地把 PNG32 图片转换为 PNG24 或者是 PNG8 格式的图片。
+
+Mac 系统的截屏，默认是 PNG24。
+
+```
+$ convert douban-movie.png png8:douban-movie-8.png
+$ ll
+-rw-r--r--  1 wzl  staff   383K  1 18 10:17 douban-movie.png
+-rw-r--r--  1 wzl  staff    77K  1 18 10:22 douban-movie-8.png
+```
+
+可以看出，大概压缩到原体积的20%。质量嘛，自然是下降了很多。
+
+
+### pngcheck
+
+可以使用 pngcheck 工具对 PNG 的信息进行查看。Mac 下可以方便地使用 homebrew 进行安装：
+
+```
+# 安装
+$ brew install pngcheck
+
+==> Downloading https://homebrew.bintray.com/bottles/pngcheck-2.3.0_1.sierra.bottle.tar.gz
+/usr/local/Cellar/pngcheck/2.3.0_1: 6 files, 153.9KB
+
+# 查看图片信息
+$ pngcheck douban-movie.png
+
+# 输出信息
+OK: douban-movie.png (1440x822, 24-bit RGB, non-interlaced, 89.0%).
+```
+
+更多使用说明，在其[官网](http://www.libpng.org/pub/png/apps/pngcheck.html)

@@ -109,11 +109,11 @@ iOS 与 Android 平台下，即便相同的小程序，也有许多细节上的�
 
 此外，还有微信各版本的兼容性测试。前端要基于 Version.js 判断微信小程序 SDKVersion，以便对低版本进行友好的提示。
 
-## <web-view> 的 user-agent
+## `<web-view>` 的 user-agent
 
 user-agent 对于我们开发者来说比较方便，尤其在一些做服务端渲染的页面，以及其他对用户的运行环境敏感的服务。
 
-如果期望在 user-agent 里用 `miniprogram` 标识为小程序的浏览器，那么恐怕会在 iOS 下遇到问题：其微信小程序 web-view 的 UA 里缺失了 miniprogram 字段。用 web-view 打开任意页面，获取其发起的请求里携带的 user-agent，拦截到的各个客户端的 user-agent 如下：
+如果期望在 user-agent 里用 `miniprogram` 标识为小程序的浏览器，那么恐怕会在 iOS 下遇到问题：其微信小程序 `<web-view>` 的 UA 里缺失了 miniprogram 字段。用 `<web-view>` 打开任意页面，获取其发起的请求里携带的 user-agent，拦截到的各个客户端的 user-agent 如下：
 
 ① dev-tools:
 

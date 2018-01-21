@@ -109,3 +109,33 @@ iOS 与 Android 平台下，即便相同的小程序，也有许多细节上的�
 
 此外，还有微信各版本的兼容性测试。前端要基于 Version.js 判断微信小程序 SDKVersion，以便对低版本进行友好的提示。
 
+## <web-view> 的 user-agent
+
+user-agent 对于我们开发者来说比较方便，尤其在一些做服务端渲染的页面，以及其他对用户的运行环境敏感的服务。
+
+如果期望在 user-agent 里用 `miniprogram` 标识为小程序的浏览器，那么恐怕会在 iOS 下遇到问题：其微信小程序 web-view 的 UA 里缺失了 miniprogram 字段。用 web-view 打开任意页面，获取其发起的请求里携带的 user-agent，拦截到的各个客户端的 user-agent 如下：
+
+① dev-tools:
+
+Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.01.1712150 MicroMessenger/6.5.7 Language/zh_CN webview/1_3 webdebugger miniprogram port/9974
+
+② android wechat:
+
+Mozilla/5.0 (Linux; Android 7.0; Mi-4c Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043632 Safari/537.36 MicroMessenger/6.6.1.1220(0x26060135) NetType/WIFI Language/zh_CN MicroMessenger/6.6.1.1220(0x26060135) NetType/WIFI Language/zh_CN miniProgram
+
+③ iphone6:
+
+Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_1 like Mac OS X) AppleWebKit/604.4.7 (KHTML, like Gecko) Mobile/15C153 MicroMessenger/6.6.1 NetType/WIFI Language/zh_CN
+
+④ iphone7:
+
+Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KHTML, like Gecko) Mobile/14G60 MicroMessenger/6.6.1 NetType/WIFI Language/zh_CN
+
+所以目前来看，ios 微信的实现是有问题的。
+
+官方对于此问题的回应是：
+
+> userAgent暂不支持，后续会提供类似功能
+
+所以，只能耐心等待了。
+

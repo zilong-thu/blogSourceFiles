@@ -5,7 +5,7 @@ tags: JavaScript
 categories: JavaScript
 ---
 
-Async Functions is introduced officially in ECMAScript 7 Spec, as the ultimate way to solve async code writting problems (especially the famous *callback hell*).
+Async Functions are introduced officially in ECMAScript 7 Spec, as the ultimate way to solve async code writting problems (especially the famous *callback hell*).
 
 We can easily get the resolved value of a Promise with `await` operator.
 

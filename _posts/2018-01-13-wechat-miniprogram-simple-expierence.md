@@ -139,3 +139,25 @@ Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_3 like Mac OS X) AppleWebKit/603.3.8 (KH
 
 所以，只能耐心等待了。
 
+
+## `wx.request()` 与 `cookie`
+
+考虑先后两个请求 A 与 B。请求A：`wx.request()` 发起，服务器响应了 `set-cookie: token=***` 首部，于是在客户端设置了 `token` 值。
+
+后续请求B：也是 `wx.request()` 发起，然后在服务器端查看 HTTP 请求的头，里面有一条就是 `cookie`。而且，如果这个设备登录过多个账号，那么后续的请求可能会被自动加入不同的 `cookie` 值。
+
+然而这个 cookie 在开发者工具里根本就看不到。
+
+解决方法，显式地在请求的参数里设置 `header` 的 `cookie` 值为空字符串：
+
+```
+wx.request({
+  url: 'you-host',
+  header: {
+    cookie: '',
+  }
+});
+```
+
+如果这还不够（因为我发现这个方法有时未必起作用，算是微信小程序的bug？），那么要在自己的服务器明确地拒绝使用 cookie 里的值。
+

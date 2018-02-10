@@ -12,7 +12,7 @@ PS：这本书我在2015年8月购买，但两年半后才开始认真读，真�
 整体而言，部分过时的技术细节并不会掩盖这本书亮丽的光华。恰当的示例图片非常精准地指出了CSS2.1里那些容易让人理解错误的关键技术。
 
 <img src="/images/2018/02/css-mastery.jpg"
-  style="max-width: 200px; border-radius: 5px;"
+  style="width: 200px; border-radius: 5px;"
   alt="《精通CSS-高级Web标准解决方案》（第二版）"
 >
 
@@ -63,3 +63,9 @@ CSS 只能用C语言风格的块级注释标记 `/**/` 进行注释。
 > 如果浮动的元素后面有一个文档流中的元素，那么这个元素的框会表现得像浮动根本不存在一样。但是，框的文本内容会受到浮动元素的影响，会移动以留出空间。用技术术语说，浮动元素旁边的行框被缩短，从而给浮动元素留出空间，因此行框围绕浮动框。
 
 `overflow: hidden | auto;` 会有副作用，这会自动地清理包含的任何浮动元素。（我之前只知道`overflow: hidden`可以。现在才知道值为`auto`也可以清除浮动。）
+
+### 链接样式的声明顺序
+
+**Loard Vadar Hates Furry Animals.** => link, visited, hover, focus, active.
+
+

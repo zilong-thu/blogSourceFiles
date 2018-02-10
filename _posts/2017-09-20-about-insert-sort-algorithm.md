@@ -5,7 +5,7 @@ tags:
 categories: 算法
 ---
 
-<img src="/images/2017/09/insert-sort.jpg">
+<img src="/images/2017/09/insert-sort.jpg" style="width: 500px; border-radius: 5px;">
 
 <!-- more -->
 

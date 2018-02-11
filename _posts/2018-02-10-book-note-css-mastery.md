@@ -73,3 +73,18 @@ CSS 只能用C语言风格的块级注释标记 `/**/` 进行注释。
 `background-position` 属性的值用像素和百分比定义，二者是有区别的。一图胜千言：
 
 <img src="/images/2018/02/background-position.png" style="width: 800px;">
+
+### `fieldset`
+
+用 `fieldset` 与 `legend` 对若干信息进行分组，比单纯用多层 `div` 要更具备语义化。示例：
+
+```html
+<fieldset style="border: 1px #af3333 solid; padding: 1em; border-radius: 5px;">
+  <legend>示例</legend>
+  <div>这里是内容</div>
+</fieldset>
+```
+
+效果：
+
+<fieldset style="border: 1px #af3333 solid; padding: 1em; border-radius: 5px;width: 240px; margin: 1em auto;"><legend>示例</legend><div>这里是内容</div></fieldset>

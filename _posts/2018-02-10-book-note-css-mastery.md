@@ -88,3 +88,15 @@ CSS 只能用C语言风格的块级注释标记 `/**/` 进行注释。
 效果：
 
 <fieldset style="border: 1px #af3333 solid; padding: 1em; border-radius: 5px;width: 240px; margin: 1em auto;"><legend>示例</legend><div>这里是内容</div></fieldset>
+
+### 第8章“布局”有点过时了
+
+如题。这一章的技术只有老的那些，主要是基于浮动。有点过时啦。
+
+此外，第9章里也大量讲解了 IE6 浏览器下的一些常见 BUG 的解决方案。这个完全不必看。
+
+中国是世界上 IE6 市场占有率最高的国家，但是截至今日，这个比例也只有 3.1% 而已。而且在逐月下降。见[IE6 Countdown](https://developer.microsoft.com/en-us/microsoft-edge/ie6countdown)。
+
+### 多栏文本布局
+
+使用 `column-count` 可以声明多栏布局。大量文字时采用多栏文本布局的确很好看，然而，正如书中指出的，目前的问题主要在于设计与用户体验层面，其实用性目前仍然有待研究。

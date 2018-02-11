@@ -68,4 +68,8 @@ CSS 只能用C语言风格的块级注释标记 `/**/` 进行注释。
 
 **Loard Vadar Hates Furry Animals.** => link, visited, hover, focus, active.
 
+### 背景图片的位置
 
+`background-position` 属性的值用像素和百分比定义，二者是有区别的。一图胜千言：
+
+<img src="/images/2018/02/background-position.png" style="width: 800px;">

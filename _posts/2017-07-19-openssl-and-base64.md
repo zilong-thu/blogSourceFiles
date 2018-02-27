@@ -16,6 +16,8 @@ categories: Linux
 > Base64是一种任意二进制到文本字符串的编码方法，常用于在URL、Cookie、网页中传输少量二进制数据。
 > —— [廖雪峰的官方网站 - base64](https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001399413803339f4bbda5c01fc479cbea98b1387390748000)
 
+<!-- more -->
+
 ## 单个文件处理
 
 OpenSSL 可以将任意 PNG 图片编码成 base64 字符序列，下面的命令以 `in.png` 图片作为输入，转码后把 base64 序列输出到 `out.txt` 文件里。

@@ -61,6 +61,21 @@ convert outside.jpeg -gravity southeast -crop 3200x1371+0+91 outside-2.jpeg
 
 ### 生成 GIF
 
+### 将图片转换为 PDF
+
+场景1，在某个目录下，将所有的 `jpg` 图片，合并为一个 PDF 文件
+
+```
+$ convert *.jpg foo.pdf
+```
+
+场景2，把某张图片转换为 PDF
+
+```
+$ convert pic.png pic.pdf
+```
+
+上面两个生成 PDF 的过程都不会修改原图。[参考](https://stackoverflow.com/questions/8955425/how-can-i-convert-a-series-of-images-to-a-pdf-from-the-command-line-on-linux)
 
 ### png8 & png24
 

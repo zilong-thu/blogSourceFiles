@@ -17,7 +17,7 @@ sidebar:
 + 出生年月：1989-07
 + 现居地：北京市朝阳区
 + E-mail： wangzilong-thu@qq.com
-<li class="telephone">电话：18362933221</li>
+<li class="telephone">电话：17343008903</li>
 
 **目标职位：Web前端开发工程师**
 

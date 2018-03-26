@@ -8,9 +8,11 @@ categories: Operating System
 ---
 
 ## 写在前头
+
 __Linux里，所有程序或系统装置都是文件__
 
 <!-- more -->
+
 ## 入门级命令
 
 `ls -a`  查看所有文件，包括隐藏的文件
@@ -22,7 +24,7 @@ __Linux里，所有程序或系统装置都是文件__
 `mkdir directoryName`  创建一个目录
 
 `rm -rf`  强行(-f)向下递归(-r)删除一个目录，不管该目录是否为空
- 
+
 `vi filename.txt`  创建新文
 
 `df -h`  查看磁盘空间使用情况
@@ -68,7 +70,7 @@ $ which git
 
 `:wq!`  保存并退出
 
-`vi filename`  用vi打开一个文件
+`vi filename`  用 vi 打开一个文件
 
 `esc`然后 `ctrl+z`可以退出编辑并关闭vi编辑器
 
@@ -131,3 +133,7 @@ lsof -i:8080
 ```
 
 `-i` 参数是用于过滤打开的文件的 `Internet address` 匹配其后面数字的。如果使用了 `-i4`，则只过滤 IPV4 的文件；`-i6` 则只查找 IPV6 的文件。
+
+## 环境
+
+`set` 可以查看当前会话中的所有环境信息

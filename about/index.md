@@ -27,17 +27,17 @@ sidebar:
 ### 技能
 
 + 主要编程语言： HTML, CSS, JavaScript
-+ 熟悉的前端库/框架： jQuery, Bootstrap, Lodash.js, Angular.js, React.js, ECharts.js
++ 熟悉的前端库/框架： jQuery, Bootstrap, Lodash.js, React.js, ECharts.js
 + 熟悉的服务器端技能/框架：Node.js, Express.js, Koa.js
 + 熟悉的前端构建工具：Gulp, Webpack, Less
 + 熟悉的工具：Git, SublimeText, Charles
 + 熟悉的操作系统：Mac OS, Linux
-+ 略懂的技能： MySQL, C/C++, Java, Docker
++ 略懂的技能： MySQL, C/C++, Java, Docker, Vue.js, Angular.js
 + 略懂的软件： Adobe Premiere/ Photoshop/ Illustrator, Vi(m)
 
 ### 项目&工作经历
 
-+ 2015-12 至 今，美团·猫眼电影。对项目复杂度把控、前端估时有一定经验，曾独立维护过一个或多个前端系统。现为猫眼行业服务服务web前端主要负责人。
++ 2015-12 至 2018-04，美团·猫眼电影。对项目复杂度把控、前端估时有一定经验，曾独立维护过一个或多个前端系统。担任猫眼行业服务服务web前端主要负责人。
   - B 端项目：商户系统(e.maoyan.com)；宣发系统；BD 门户；内部管理平台
   - H5 项目：猫眼专业版APP 内嵌 web 页面（piaofang.maoyan.com）；猫眼电影m端（m.maoyan.com）
   - 微信小程序：影视人名片小程序

@@ -11,10 +11,7 @@ PS：这本书我在2015年8月购买，但两年半后才开始认真读，真�
 
 整体而言，部分过时的技术细节并不会掩盖这本书亮丽的光华。恰当的示例图片非常精准地指出了CSS2.1里那些容易让人理解错误的关键技术。
 
-<img src="/images/2018/02/css-mastery.jpg"
-  style="width: 200px; border-radius: 5px;"
-  alt="《精通CSS-高级Web标准解决方案》（第二版）"
->
+<img src="/images/2018/02/css-mastery.jpg" style="width: 200px; border-radius: 5px;" alt="《精通CSS-高级Web标准解决方案》（第二版）">
 
 <!-- more -->
 

@@ -61,3 +61,5 @@ sidebar:
 Github: https://github.com/zilong-thu/
 
 <img src="/images/my-qr-code.jpeg" style="width: 200px;" alt="手机扫描二维码访问本网站">
+
+<img src="/images/wechat/qrcode_for_gh_1bc1fa020fc5_344.jpg" style="width: 200px;" alt="微信扫描二维码关注博主的公众号">

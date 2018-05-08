@@ -67,11 +67,12 @@ Zopfli 的介绍：
 
 > Zopfli is an encoder implementation of DEFLATE, a compression method commonly used in PNG format (among many other usages, e.g. ZIP, etc), designed to produce the likely smallest compressed output. Since it is a lossless transformation, a PNG file that is recompressed with Zopfli still retains all the pixels as expected.
 
-好像得自己编译（当然，也可以把编译后的 `zopflipng` 程序设置为全局的命令）：
+需要自己编译：
 
 ```
 $ git clone https://github.com/google/zopfli.git
 $ cd zopfli
+# 下面这样编译，得到的是 ZopfliPNG 二进制可执行文件
 $ make zopflipng
 ```
 
@@ -80,6 +81,16 @@ $ make zopflipng
 ```
 $ ./zopflipng images/bg.png build/bg_zopfli.png
 ```
+
+当然，也可以把编译后的 `zopflipng` 程序设置为全局的命令，然后方便起见，可以使用短名称来软链接它：
+
+```
+# 在 zopfli 代码目录下
+$ mv zopflipng /usr/local/bin
+$ ls -s /usr/local/bin/zopflipng /usr/local/bin/zop
+```
+
+上面的软链接效果是可以在系统任意目录下使用 `zop` 来快捷运行 `zopflipng` 以压缩图片。
 
 433 KB 的图片，可以被压缩到 207 KB。可知，在前面用 ImageOptim 进行压缩时，其选择了 Zopfli 的压缩结果。
 
@@ -138,4 +149,5 @@ $ pngcrush -reduce -brute build/bg_crushed.png build/bg_crushed_2.png
 
 
 ## 其他参考文章
+
 + [png 图片压缩工具ImageOptim是如何压缩图片的？](https://www.zhihu.com/question/23752454)

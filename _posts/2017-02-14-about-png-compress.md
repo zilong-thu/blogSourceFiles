@@ -97,6 +97,7 @@ $ ls -s /usr/local/bin/zopflipng /usr/local/bin/zop
 阅读资料：
 
 + [http://edupertuis.net/2016/01/12/playing-with-zopfli.html](http://edupertuis.net/2016/01/12/playing-with-zopfli.html)
++ [Zopfli Optimization: Literally Free Bandwidth](https://blog.codinghorror.com/zopfli-optimization-literally-free-bandwidth/)
 
 ## PNGOUT
 

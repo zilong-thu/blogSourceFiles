@@ -42,4 +42,4 @@ brew install sox
 play path/to/music/file repeat 0
 ```
 
-### 思考
+### 思考：文化随机漂移

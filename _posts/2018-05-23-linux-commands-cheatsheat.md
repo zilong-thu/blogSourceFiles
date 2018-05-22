@@ -1,8 +1,8 @@
 ---
-title: Linux 命令行笔记（2）
+title: Linux 命令行笔记（3）
 date: 2018-05-23 01:24:38
 tags: Linux
-category: Linux
+category: Operating System
 ---
 
 读《鸟哥的Linux私房菜（第三版）》所做的部分实际操作及笔记。

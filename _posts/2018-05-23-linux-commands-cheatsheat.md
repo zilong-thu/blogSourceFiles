@@ -46,3 +46,18 @@ $ tail -n 20 -f file-name.log
 
 `tail` 程序需要使用 `ctrl` + `c` 来退出。
 
+
+## 文件系统
+
+`df` 可以查看文件系统的整体信息。以 Mac 为例：
+
+```
+$ df
+Filesystem    512-blocks     Used Available Capacity iused      ifree %iused  Mounted on
+/dev/disk1     487849984 86055960 401282024    18%  995165 4293972114    0%   /
+devfs                374      374         0   100%     648          0  100%   /dev
+map -hosts             0        0         0   100%       0          0  100%   /net
+map auto_home          0        0         0   100%       0          0  100%   /home
+```
+
+也就是说，Mac OS 的文件系统是以 512 字节作为最小存储单元的。

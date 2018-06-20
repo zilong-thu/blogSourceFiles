@@ -11,13 +11,13 @@ BigInt is Coming!
 
 ## Number 的问题
 
-<img src="/images/2018/06/js-number.jpg">
+<img src="/images/2018/06/js-number.jpg" style="max-width: 400px;">
 
 JavaScript 里的 Number 是完全按照 IEEE Standard for Floating-Point Arithmetic (IEEE 754)<sup>[1,2]</sup> 实现的。Number 类型实际上就是 64 位的浮点数类型。
 
-任意数值都可以用科学计数法来表示：
+任意数值都可以用科学计数法来表示，例如：
 
-<img src="/images/2018/06/scientific-notation.png">
+<img src="/images/2018/06/scientific-notation.png" style="max-width: 400px;">
 
 
 ## 参考资料

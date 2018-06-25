@@ -3,6 +3,7 @@ title: BigInt is Coming
 date: 2018-06-20 21:20:34
 tags: JavaScript
 category: JavaScript
+banner: /images/2018/06/js-number.jpg
 ---
 
 BigInt is Coming!
@@ -11,17 +12,15 @@ BigInt is Coming!
 
 ## Number 的问题
 
-<img src="/images/2018/06/js-number.jpg" style="max-width: 400px;">
-
 JavaScript 里的 `Number` 是完全按照 IEEE Standard for Floating-Point Arithmetic (IEEE 754)<sup>[1,2]</sup> 实现的。`Number` 类型实际上就是 64 位浮点数（Double precision floating-point format），也就是俗称的 `Double` 类型。
 
 任意数值都可以用科学计数法来表示，例如：
 
-<img src="/images/2018/06/scientific-notation.png" style="max-width: 400px;">
+<img src="/images/2018/06/scientific-notation.png">
 
 Double 类型数值的存储结构如下图所示，使用了64位二进制，最左边一位是符号位，之后11位是指数位，后面的52位是浮点数部分：
 
-<img src="/images/2018/06/ieee-double-64.jpeg" style="max-width: 600px;">
+<img src="/images/2018/06/ieee-double-64.jpeg">
 
 由于需要有很多位用来表示浮点数，因此 Double 类型所能够表示的整数范围远远小于 2<sup>64</sup>。
 
@@ -47,7 +46,7 @@ ECMAScript 为此提出的解决方案是引入新的基本类型：`BigInt`。�
 
 这个基本类型目前处在 Stage3 阶段。此阶段的含义是 Candidate（候选），“Indicate that further refinement will require feedback from implementations and users”，即需要实现者（通常是浏览器厂商）与用户进一步优化与反馈。
 
-<img src="/images/2018/06/tc39-bigint-title.png" style="max-width: 500px;">
+<img src="/images/2018/06/tc39-bigint-title.png">
 
 目前 Chrome67 已经开始支持 BigInt。还需要有至少一个其他浏览器厂商或JS运行时给出具体的实现。
 

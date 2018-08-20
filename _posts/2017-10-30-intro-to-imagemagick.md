@@ -92,6 +92,11 @@ $ ll
 
 可以看出，大概压缩到原体积的20%。质量嘛，自然是下降了很多。
 
+### 灰度图
+
+```bash
+$ convert <img_in> -set colorspace Gray -separate -average <img_out>
+```
 
 ### pngcheck
 

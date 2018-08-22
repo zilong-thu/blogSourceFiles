@@ -1,7 +1,4 @@
-# Logo
-logo: css/images/logo.png # Empty this to unset logo
-
-# Header
+# Menus
 menu:
   Home: .
   Archives: archives
@@ -9,41 +6,83 @@ menu:
   # Tags: tags
   About: about
 
-# Content
-excerpt_link: Read More
-fancybox: false
+# Customize
+customize:
+    logo:
+        enabled: true
+        width: 40
+        height: 40
+        url: images/logo.png
+    profile:
+        enabled: false # Whether to show profile bar
+        avatar: css/images/avatar.png
+        gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
+        author: PPOffice
+        author_title: Web Developer & Designer
+        location: Beijing, China
+        follow: https://github.com/zilong-thu/
+    highlight: monokai
+    sidebar: # sidebar position, options: left, right or leave it empty
+    thumbnail: false # enable posts thumbnail, options: true, false
+    favicon: /favicon.png # path to favicon
+    social_links:
+        github: http://github.com/zilong-thu
+        twitter: /
+        facebook: /
+        dribbble: /
+        rss: /
+    social_link_tooltip: true # enable the social link tooltip, options: true, false
 
-# Profile
-profile: false # whether to show profile bar
-gravatar: false # whether to use gravatar with the email
-showlogo: false # whether to show the logo in the header
-
-# Sidebar
-sidebar: false # set to false if you don't want a sidebar
+# Widgets
 widgets:
-# - recent_posts
-# - category
-# - tag
-# - tagcloud
-# - archive
-thumbnail: false
+    - recent_posts
+    - category
+    # - archive
+    # - tag
+    # - tagcloud
+    # - links
 
-# Contacts
-contacts:
-  github: http://github.com/zilong-thu/
-  twitter: '#'
-  facebook: https://www.facebook.com/zilong.wang.334
-  dribbble: '#'
-  rss: atom.xml
+# Search
+search:
+    insight: false # you need to install `hexo-generator-json-content` before using Insight Search
+    swiftype: # enter swiftype install key here
+    baidu: false # you need to disable other search engines to use Baidu search, options: true, false
 
-# Links
-links:
-  Hexo: http://hexo.io
+# Comment
+comment:
+    # disqus: wangzilongblog # enter disqus shortname here
+    duoshuo: # enter duoshuo shortname here
+    youyan: # enter youyan uid here
+    facebook: # enter true to enable
+    isso: # enter the domain name of your own comment isso server eg. comments.example.com
+    changyan: # please fill in `appid` and `conf` to enable
+        appid:
+        conf:
+    gitment:
+        owner: #your github ID
+        repo: #the repo to store comments
+        #Register an OAuth application, and you will get a client ID and a client secret.
+        client_id: #your client ID
+        client_secret: #your client secret
+
+# Share
+share: default # options: jiathis, bdshare, addtoany, default
+
+# Plugins
+plugins:
+    lightgallery: false # options: true, false
+    justifiedgallery: false # options: true, false
+    google_analytics: UA-45360338-1 # enter the tracking ID for your Google Analytics
+    google_site_verification: # enter Google site verification code
+    baidu_analytics: 73ca1d91f31b2463befdc1c1827f2576 # enter Baidu Analytics hash key
+    mathjax: false # options: true, false
 
 # Miscellaneous
-google_analytics: UA-45360338-1
-favicon: /favicon.png
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:
+miscellaneous:
+    open_graph: # see http://ogp.me
+        fb_app_id:
+        fb_admins:
+        twitter_id:
+        google_plus:
+    links:
+        # Hexo: http://hexo.io

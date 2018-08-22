@@ -1,28 +1,22 @@
 # Hexo Configuration
-## Docs: http://hexo.io/docs/configuration.html
+## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
 title: 王子龙的博客
-subtitle: Stay hungry, stay foolish.
-description: 一个不知名Web前端工程师的个人博客
-author_title: 'Stay hungry, stay foolish.'
-author: 王子龙
-language: en
-# language: zh-Hans
+subtitle:
+description:
+keywords:
+author: zilong-thu
+language:
 timezone:
-avatar: about/myResumeAvatar.jpg
-location: 'Nanjing, China'
-follow: https://github.com/zilong-thu/
-# site setup time
-since: 2013
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://borninsummer.com
 root: /
 permalink: :year/:month/:day/:title/
-permalink_defaults: :year/:month/:day/:title/
+permalink_defaults:
 
 # Directory
 source_dir: source
@@ -32,7 +26,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: javascripts/*, files/*, stylesheets/*, svg/*, files/*, images/*, *.html
+skip_render:
 
 # Writing
 new_post_name: :year-:month-:day-:title.md # File name of new posts
@@ -47,9 +41,18 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
+  auto_detect: false
   tab_replace:
-
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -68,49 +71,15 @@ per_page: 10
 pagination_dir: page
 
 # Extensions
-## Plugins: http://hexo.io/plugins/
-## Themes: http://hexo.io/themes/
-# [landscape, next, icarus]
-theme: hexo-theme-icarus
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: icarus
 
 # Deployment
-## Docs: http://hexo.io/docs/deployment.html
+## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:zilong-thu/zilong-thu.github.com.git
   branch: master
+  repo: git@github.com:zilong-thu/zilong-thu.github.com.git
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
 
-##Comment service
-# duoshuo_shortname: borninsummer
-# 多说分享服务
-# duoshuo_share: true
-# 多说热评文章
-# duoshuo_hotartical: true
-
-disqus_shortname: wangzilongblog
-
-# Social links
-social:
-  github: https://github.com/zilong-thu
-  # weibo: http://weibo.com/your-user-name
-  douban: http://douban.com/people/47436584
-  zhihu: http://www.zhihu.com/people/zilong-THU
-
-# baidu analytics
-baidu_analytics:
-
-
-# 首页的分页
-index_generator:
-  per_page: 10
-
-archive_generator:
-  per_page: 50
-  yearly: true
-  monthly: true
-
-category_generator:
-  per_page: 30
-
-tag_generator:
-  per_page: 20

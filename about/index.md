@@ -32,15 +32,17 @@ sidebar:
 + 熟悉的前端构建工具：Gulp, Webpack, Less/PostCSS .etc
 + 熟悉的工具：Git, SublimeText, Charles
 + 熟悉的操作系统：Mac OS, Linux
-+ 略懂的技能： MySQL, C/C++, Java, Docker, Vue.js, Angular.js
++ 略懂的技能： MySQL/SQL, C/C++, Java, Docker, Vue.js, Angular.js
 + 略懂的软件： Adobe Premiere/ Photoshop/ Illustrator, Vi(m)
 
 ### 项目&工作经历
 
 + 2018-04 至今，美团·美团出行事业部，高级前端工程师。
+  - 营销H5页面
+  - 美团打车营销号小程序主R
 + 2015-12 至 2018-04，美团·猫眼电影。对项目复杂度把控、前端估时有一定经验，曾独立维护过一个或多个前端系统。担任猫眼行业服务服务web前端主要负责人（5人前端小组）。
-  - B 端项目：商户系统(e.maoyan.com)；宣发系统；BD 门户；内部管理平台
-  - H5 项目：猫眼专业版APP 内嵌 web 页面（piaofang.maoyan.com）；猫眼电影m端（m.maoyan.com）
+  - B 端项目：商户系统（[e.maoyan.com](https://e.maoyan.com)）；宣发系统；BD 门户；内部管理平台
+  - H5 项目：猫眼专业版APP 内嵌 web 页面影视人相关业务（[piaofang.maoyan.com](https://piaofang.maoyan.com/celebrity/piazza)）；猫眼电影m端点播院线业务（[m.maoyan.com](https://m.maoyan.com/)）
   - 微信小程序：影视人名片小程序。负责小程序相关技术的调研、开发阶段的技术难点攻关以及前端开发进度掌控。
 + 2015-10 至 2015-12，兼职爱推科技，一个短视频/GIF分享社区，担任前端开发工程师，负责Web页面重构、代码优化等，使用Node.js对原架构（基于Django）进行前后端分离。
 + 2014-07 至 2015-10 就职于NICG（南京），负责 Web 前端开发及 Node.js 相关开发。

@@ -50,12 +50,16 @@ sidebar:
 + 2014-07 至 2015-10 就职于NICG（南京），负责 Web 前端开发及 Node.js 相关开发。
 + 2013-06 至 2013-09 研究生期间，实验室项目，开始 web 前端开发之路。
 
+### 写作
+
++ 常年维护并更新博客，[https://borninsummer.com](https://borninsummer.com/)
++ 电子书（写作中）：[学习正则表达式-基于JavaScript](http://borninsummer.com/learn-regexp-with-javascript/)
++ 电子书（写作中）：[Web前端工程化与组件化开发实践](https://borninsummer.com/Practice-in-Front-End-Engineering-and-Components-Development/)。采用[署名-非商业性使用 4.0 国际协议](https://creativecommons.org/licenses/by-nc/4.0/deed.zh)进行开源写作。
+
 ### 自我评价
 
 + Coding方面认可编程规范，注重团队合作。对互联网行业充满激情。
 + 向 Web 全栈开发不懈努力。
 + 其他：喜欢踢足球、看电影。为人乐观，待人真诚，喜欢帮助别人。具有很强的学习能力。
-
-<img src="/images/my-qr-code.jpeg" style="width: 200px;" alt="博客：http://borninsummer.com/">
 
 <img src="/images/wechat/qrcode_for_gh_1bc1fa020fc5_344.jpg" style="width: 200px;" alt="微信扫描二维码关注博主的公众号">

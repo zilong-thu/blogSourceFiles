@@ -33,7 +33,7 @@ sidebar:
 + 熟悉的前端构建工具：Gulp, Webpack, Less/PostCSS .etc
 + 熟悉的工具：Git, SublimeText, Charles, VSCode
 + 熟悉的操作系统：Mac OS, Linux
-+ 略懂的技能： MySQL/SQL, C/C++, Java, Docker, Vue.js, Angular.js
++ 略懂的技能： MySQL/SQL, C/C++, Java, Docker, Angular.js
 + 略懂的软件： Adobe Premiere/ Photoshop/ Illustrator, Vi(m)
 
 ### 项目&工作经历
@@ -54,7 +54,7 @@ sidebar:
 
 + 常年维护并更新博客，[https://borninsummer.com](https://borninsummer.com/)
 + 电子书（写作中）：[学习正则表达式-基于JavaScript](http://borninsummer.com/learn-regexp-with-javascript/)
-+ 电子书（写作中）：[Web前端工程化与组件化开发实践](https://borninsummer.com/Practice-in-Front-End-Engineering-and-Components-Development/)。采用[署名-非商业性使用 4.0 国际协议](https://creativecommons.org/licenses/by-nc/4.0/deed.zh)进行开源写作。
++ 电子书（写作中）：[Web前端工程化与组件化开发实践](https://borninsummer.com/Practice-in-Front-End-Engineering-and-Components-Development/)
 
 ### 自我评价
 

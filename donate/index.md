@@ -8,8 +8,8 @@ sidebar:
 
 ## 支付宝
 
-<img src="/images/2019/my-alipay.jpeg" style="width: 100%; max-width: 300px; display: inline-block;" />
+<img src="/images/payme/my-alipay.jpeg" style="width: 100%; max-width: 300px; display: inline-block;" />
 
 ## 微信
 
-<img src="/images/2019/my-wechatpay.png" style="width: 100%; max-width: 300px; display: inline-block;" />
+<img src="/images/payme/my-wechatpay.jpeg" style="width: 100%; max-width: 300px; display: inline-block;" />

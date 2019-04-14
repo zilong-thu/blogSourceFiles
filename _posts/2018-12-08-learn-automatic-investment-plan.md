@@ -1,7 +1,8 @@
 ---
 title: 懒人理财法之基金定投（Automatic Investment Plan）
 date: 2018-12-08 16:13:09
-tags:
+tags: 理财
+category: 理财
 ---
 
 ## 一些基本概念

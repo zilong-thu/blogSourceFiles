@@ -9,7 +9,7 @@ category: 总结
 
 加粗意味着很重要。
 
-<img src="/images/2019/04/about-making-career-choices.png" style="max-width: 700px;">
+<img src="/images/2019/04/about-making-career-choices.png" style="width: 700px;">
 
 过路人1：工作十年，会发现，在哪儿都一样。
 过路人2：做选择时，怎么确保选择的那个是正确的。

@@ -1,7 +1,7 @@
 ---
 title: Git 学习笔记
 date: 2015-11-08 11:37:19
-tags: 
+tags:
   - Git
 categories: Git
 banner: /images/2015/11/git.jpg
@@ -18,27 +18,27 @@ banner: /images/2015/11/git.jpg
 
 配置别名可以提高工作效率。
 
-```
-git config --global alias.co checkout
-git config --global alias.ci commit
-git config --global alias.br branch
-git config --global alias.st status
+```bash
+$ git config --global alias.co checkout
+$ git config --global alias.ci commit
+$ git config --global alias.br branch
+$ git config --global alias.st status
 ```
 
 ### 配置用户信息
 
-```
-git config --global user.name "zilong-thu";
-git config --global user.email "809052335@qq.com"
+```bash
+$ git config --global user.name "zilong-thu";
+$ git config --global user.email "809052335@qq.com"
 ```
 
 ### 生成公钥（SSH keys）
 
 可以用下面的命令生成自己的公钥（public key）：
 
-```
+```bash
 # Creates a new ssh key using the provided email
-ssh-keygen -t rsa -C "xxxxx@xxxxx.com"
+$ ssh-keygen -t rsa -C "xxxxx@xxxxx.com"
 ```
 
 生成的 public key 在 `~/.ssh/id_rsa.pub` 这个文件里。
@@ -46,8 +46,8 @@ ssh-keygen -t rsa -C "xxxxx@xxxxx.com"
 ## fetch 操作
 fetch 操作仅仅是把远程仓库的代码下载当本地而已。可以同时指定相应的本地分支名，git 便会在 fetch 完成后自动创建一个本地分支，追踪该远程分支。例如：
 
-```
-git fetch origin <branch_name>:<local_branch_nam>
+```bash
+$ git fetch origin <branch_name>:<local_branch_nam>
 ```
 
 ## pull 操作
@@ -58,17 +58,17 @@ git fetch origin <branch_name>:<local_branch_nam>
 
 【方法1】先clean当前的工作目录，使其与上一次的commit一致，然后再pull即可
 
-```
-git reset --hard
-git pull
+```bash
+$ git reset --hard
+$ git pull
 ```
 
 【方法2】先将改动们暂存一下（`stash`），然后更新，更新完了再将暂存栈弹出或删除。
 
-```
-git stash
-git pull
-git stash pop
+```bash
+$ git stash
+$ git pull
+$ git stash pop
 ```
 
 ## 提交操作
@@ -76,8 +76,8 @@ git stash pop
 ### 撤销刚才的提交
 好比，初始化一份nodejs代码，`git commit` 完了，才想起来没有把 `node_modules` 目录加进 `.gitignore`文件里去，太可怕了。得把刚才的提交撤销掉，而且保证 `node_modules` 目录不能在代码仓库里。就得用到这个命令了：
 
-```
-git reset --hard HEAD~1
+```bash
+$ git reset --hard HEAD~1
 ```
 
 然后，把事情做正确了，再提交。当然了，更全面的问题与解决方案在这里：
@@ -94,10 +94,10 @@ git reset --hard HEAD~1
 A-B-C
     ↑
   master
- 
+
 # 执行这个
 git reset --hard HEAD~1
- 
+
 # 当前代码仓库就成了这样：
  (F)
 A-B
@@ -109,8 +109,8 @@ master
 
 ### 修改刚才的提交的注释
 
-```
-git commit --amend
+```bash
+$ git commit --amend
 ```
 
 这样会打开文本编辑器，可以让你修改刚才的提交的注释。
@@ -142,7 +142,7 @@ A-B-C       server
 ```
   master   client
     ↓      ↙
-A-B-C-G'-H'       
+A-B-C-G'-H'
      \
       C-D-E-F ← server
 ```
@@ -181,7 +181,7 @@ A-B-C-G'-H'
 
 `git push origin --delete <branch_name>`，可以删除远程仓库里的分支。删除后，会在网站提示诸如此类的消息：
 
-> No branch or tag 'refs/heads/<branch_name>' exists in repository '***'
+> No branch or tag 'refs/heads/<branch_name>' exists in repository '...'
 
 ### 重命名一个本地分支
 
@@ -204,7 +204,7 @@ git push --set-upstream origin master
 Git 的提示：
 
 > The current branch master has no upstream branch.
-> 
+>
 > To push the current branch and set the remote as upstream, use
 >
 >    git push --set-upstream origin master
@@ -215,16 +215,16 @@ Git 的提示：
 
 不想提交，又想获取最新的远程仓库代码时：
 
-```
-git stash
-git pull --rebase origin feature/my_feature_1
-git stash apply
+```bash
+$ git stash
+$ git pull --rebase origin feature/my_feature_1
+$ git stash apply
 ```
 
 `git stash` 默认执行的是 `git stash save`，可以给这个储藏添加一条备注：
 
-```
-git stash save "这是一个暂存"
+```bash
+$ git stash save "这是一个暂存"
 ```
 
 `git stash apply` 只会取出储藏栈最上面的那个状态，并不会删除它。想要达到“弹出栈”的效果，可以使用 `git stash pop`，这条命令会把储藏栈的顶端状态弹出，并将其从栈中删除。
@@ -252,8 +252,8 @@ git stash save "这是一个暂存"
 
 git 本身提供了一个可以很好地画出提交分支图历史的命令。
 
-```
-git log --pretty=format:"%h %s" --graph
+```bash
+$ git log --pretty=format:"%h %s" --graph
 
 # `--pretty` 参数可以指明显示提交记录的格式。其值可以是 `oneline` | `short` | `full` | `fuller` | `format`。其中 `format` 可以指定一个自定义格式。
 # `--graph` 参数用来指示 git 借助 ASCII 字符来绘制分支、合并历史。
@@ -277,7 +277,7 @@ OK，不管难不难，首先得在广袤的代码仓库中找到相关的提交
 猜测那个功能的关键字，是“用户行为分析”。那么可以这样：
 
 > To search the commit log (across all branches) for the given text:
-> 
+>
 > git log --all --grep='用户行为分析'
 >
 > 参考 [How to search a Git repository by commit message?](http://stackoverflow.com/questions/7124914/how-to-search-a-git-repository-by-commit-message)
@@ -288,10 +288,15 @@ OK，真的出来了几个提交记录。那么想查看对应的记录快照是
 
 这时候，可以查看当前的 HEAD 是否为希望的提交记录的 ID ：`git rev-parse HEAD`。
 
-### 对比两次提交之间的差异
+### git diff
 
-```
-git diff <commit-id-1> <commit-id-2>
+```bash
+# 对比两次提交之间的差异
+$ git diff <commit-id-1> <commit-id-2>
+
+# 对比两个分支之间的代码差异
+# 给出 b 相对于 a 的差异
+$ git diff branch-a branch-b
 ```
 
 可以对比两次提交之间的全部差异。例如 `git diff HEAD~ HEAD` 就可以看到所在分支的最近一次提交与之前一次提交的差异。（HEAD只是最近一次提交的 commitID 的别名）
@@ -305,7 +310,7 @@ git diff <commit-id-1> <commit-id-2>
 
 `checkout` 可以用于切换分支，也可以用于从某次体积记录中把某个或该提交的全部文件拿到工作目录中。
 
-```
+```bash
 $ git checkout <branch-name>
 $ git checkout <commit-id>
 $ git checkout <commit-id> path/to/file
@@ -313,7 +318,7 @@ $ git checkout <commit-id> path/to/file
 
 还可以用于从某个分支里取出其最新的某个特定文件，即 git-checkout specific files from another branch：
 
-```
+```bash
 $ git checkout <branch-name> -- <file-name>
 ```
 
@@ -321,31 +326,31 @@ $ git checkout <branch-name> -- <file-name>
 
 ---------------------------
 
- 
+
 ## 【附录】自己不是很熟练的 Git 命令手册
 
 
-```
+```bash
 # 查看关于某条命令的帮助
-git --help <command>
- 
+$ git --help <command>
+
 # 检查多余的空白（以免给同伴们造成麻烦）
-gid diff --check
- 
+$ git diff --check
+
 # 彻底放弃最近的 N 次提交
-git reset --hard HEAD~N
- 
+$ git reset --hard HEAD~N
+
 # 图形化查看一个文件的提交历史
-gitk <filename>
+$ gitk <filename>
 
 # 提交记录，带每次的更改状态
-git log --stat
+$ git log --stat
 
 # 删除一个远程分支（对 1.7.0 版本及以上）
-git push origin --delete branch_to_delete
+$ git push origin --delete branch_to_delete
 
 # 创建一个新分支，让它与远程分支的名称一样，并且保持与该远程分支相关
 # 这样就创建了一个名为 feature/branch_1 的本地新分支
-git fetch origin feature/branch_1
-git checkout --track origin/feature/branch_1
+$ git fetch origin feature/branch_1
+$ git checkout --track origin/feature/branch_1
 ```

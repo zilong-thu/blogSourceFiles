@@ -10,6 +10,8 @@ tags:
 
 <!-- more -->
 
+## 路书
+
 下面是简略的路书。
 
 <figure><img src="/images/2019/05/road-map.jpeg" /><figcaption>路书</figcaption></figure>
@@ -18,3 +20,7 @@ tags:
 <figure><img src="/images/2019/05/03-yunnan-nanhua.jpg" /><figcaption>云南·楚雄自治州·南华县火车站</figcaption></figure>
 <figure><img src="/images/2019/05/04-dali-old-town.jpg" /><figcaption>云南·大理古城</figcaption></figure>
 <figure><img src="/images/2019/05/05-dali-erhai-lake.jpg" /><figcaption>云南·大理·洱海日落</figcaption></figure>
+
+## 花销
+
+整个行程花费大约 12000 人民币，所以是人均 6000 元左右。符合自己的预期，哈哈。

@@ -1,11 +1,13 @@
 ---
-title: How Source Map Works
+title: Source Map 工作原理
 date: 2019-04-13 10:46:00
 tags: Web-FE
 category: Web-FE
 ---
 
 ## 简介
+
+Source Map 是前端开发中非常有用的一种文件，它提供了源码映射的机制，使开发人员能够在本地开发过程或者线上环境基于源码进行调试或者错误堆栈分析。
 
 ## Source Map Revision 3 Proposal
 

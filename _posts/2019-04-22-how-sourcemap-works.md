@@ -9,11 +9,13 @@ category: Web-FE
 
 Source Map 是前端开发中非常有用的一种文件，它提供了源码映射的机制，使开发人员能够在本地开发过程或者线上环境基于源码进行调试或者错误堆栈分析。
 
-## Source Map Revision 3 Proposal
+## Source Map 提案
 
-JavaScript、CSS 代码的 sourcemap 是根据 Source Map Revision 3 Proposal <sup>[1]</sup> 来实现的。
+JavaScript、CSS 代码的 source map 是根据 [Source Map Revision 3 Proposal](https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit#heading=h.1ce2c87bpj24)（这个文档在谷歌 Docs 里，如果打不开，可以[下载 PDF](/files/2019/source_map_revision_3_proposal.pdf)）这个提案来实现的。提案里用一句话描述其特点为“Better bidirectional mapping”，即“更好的双向映射”。
 
-一个 sourceMap 文件的内容实际上是一个 JSON 对象：
+<img src="/images/2019/06/source-map.png" />
+
+按照提案一个 sourceMap 文件的内容实际上是一个 JSON 对象：
 
 <!-- more -->
 
@@ -67,7 +69,7 @@ A list of symbol names used by the “mappings” entry.
 
 ## References
 
-1. [Source Map Revision 3 Proposal](https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit#heading=h.1ce2c87bpj24)，这个文档在谷歌 Docs 里，如果打不开，可以[下载 PDF](/files/2019/source_map_revision_3_proposal.pdf)
-2. [vlq | github](https://github.com/Rich-Harris/vlq/tree/master/sourcemaps)
-3. [vlq | npm](https://www.npmjs.com/package/vlq)
-4. [vlq | wikipedia](https://en.wikipedia.org/wiki/Variable-length_quantity)
+1. [vlq | github](https://github.com/Rich-Harris/vlq/tree/master/sourcemaps)
+2. [vlq | npm](https://www.npmjs.com/package/vlq)
+3. [vlq | wikipedia](https://en.wikipedia.org/wiki/Variable-length_quantity)
+4. [source map 的原理探究](https://www.cnblogs.com/Wayou/p/understanding_frontend_source_map.html)

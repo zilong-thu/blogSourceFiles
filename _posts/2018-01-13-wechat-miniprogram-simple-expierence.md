@@ -98,10 +98,12 @@ wx.navigateTo({
 
 ## 常用的类
 
-+ 用于网络请求的 request.js，支持 Promise 接口
-+ 版本判断，Version.js
-+ 时间日期格式化，类似于 moment.js，但是要更为轻量级
-+ URL 解析与序列化，url.js
++ 用于网络请求的 request.js，支持 Promise 接口。我个人比较喜欢链式调用的风格，参考: [http.js | github](https://github.com/zilong-thu/my-js-lib/tree/master/wxapp)。
++ 版本判断，Version.js。Version.js 的作用是对版本号进行解析、比较。例如自己的小程序依赖了某个版本的基础库，那么可以在运行时判断当前基础库是否符合预期，否则提示用户升级等等。要实现的关键 API 有 `gt`（大于）、`lt`（小于）、`gte`（大于等于）、`lte`（小于等于）、`equal`（等于）等等。可以参考 [`compare-version`](https://www.npmjs.com/package/compare-versions) 包的实现。
++ 时间日期格式化，类似于 moment.js，但是要更为轻量级。可以参考这个：[moment-lite.js](https://github.com/zilong-thu/moment-lite.js)。
++ URL 解析与序列化，url.js。可以使用 npm 包 `query-string`，也可以参考这个包自己实现关键 API：
+  - `parse()`
+  - `stringify`
 
 ## 兼容性
 

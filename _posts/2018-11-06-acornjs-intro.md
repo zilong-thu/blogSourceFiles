@@ -12,4 +12,4 @@ categories: JavaScript
 
 PPT 中部分代码示例：[learn-acorn.js | zilong-thu's github](https://github.com/zilong-thu/learn-acorn.js)。
 
-有部分代码是公司的项目，因此不能放出来了。
+有些示例是源码阅读，这个大家直接下载 acorn.js 的源码来看就好了。另外有部分代码是公司的项目，因此不能放出来，见谅~~

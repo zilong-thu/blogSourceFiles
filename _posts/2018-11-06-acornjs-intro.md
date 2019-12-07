@@ -13,3 +13,5 @@ categories: JavaScript
 PPT 中部分代码示例：[learn-acorn.js | zilong-thu's github](https://github.com/zilong-thu/learn-acorn.js)。
 
 有些示例是源码阅读，这个大家直接下载 acorn.js 的源码来看就好了。另外有部分代码是公司的项目，因此不能放出来，见谅~~
+
+在我的电子书[《Web前端工程化与组件化开发实践》](https://borninsummer.com/Practice-in-Front-End-Engineering-and-Components-Development/) 中，有一章专门对 JS 的解析器进行介绍，感兴趣的朋友可以移步：[JavaScript 解析器](https://borninsummer.com/Practice-in-Front-End-Engineering-and-Components-Development/part-2/chapter-3-js-parsers/1-js-parser.html)。

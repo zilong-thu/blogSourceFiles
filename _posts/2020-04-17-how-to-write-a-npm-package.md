@@ -67,7 +67,10 @@ $ git init
 开发、测试中也可以发包，这时候一般不发布语义化的版本号，而是使用诸如 `1.1.1-0`、`1.1.1-alpha`、`1.1.1-SNAPSHOT` 这样的版本号。
 
 ```bash
-# 先登录
+# 先确保自己有 npm 或私有镜像（例如美团的 mnpm）的账号，没有的话需要通过 npm adduser 来注册
+# 参考 [npm-adduser | npm docs](https://docs.npmjs.com/cli-commands/adduser.html)
+
+# 然后登录
 $ npm login
 
 # 发布

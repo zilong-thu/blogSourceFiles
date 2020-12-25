@@ -2,6 +2,8 @@
 title: Goodbye, 2020
 date: 2020-12-19 00:04:05
 tags: 总结
+category: 总结
+banner: /images/2020/12/5.21-in-nanjing.jpg
 ---
 
 又到了总结一年的方方面面的时候啦。2020 年真是魔幻的一年。下面就是今年的总结啦。
@@ -12,6 +14,11 @@ tags: 总结
 
 去年年底跟小可分手（难过了一个冬天），今年年初复合（很开心 `^_^`），然后 5 月跟小可领证，下半年办了婚礼。这是今年最开心的事情了~~ 人生啊。
 
+<figure>
+<img src="/images/2020/12/5.22-in-nanjing.jpg" style="width: 640px;">
+<figcaption>那天灯光正好，气氛正好，也有人祝福。</figcaption>
+</figure>
+
 另外，家里的另外两个妹妹也都结婚或者要结婚了。老王家今年真是喜事临门。
 
 今年上半年，带爷爷和二叔在北京玩，去了故宫、长城。算是圆了老爷子的北京梦。大家都很开心。
@@ -21,11 +28,18 @@ tags: 总结
 今年的车技练得很溜了，开了好几次高速，在北京、山东、河北、山西多个省市开车到处跑，开心得不得了。
 
 <figure style="text-align: center;">
-<img src="/images/2020/12/grandpa-in-forbidden-city.jpeg" style="width: 600px;" />
-<figurecaption>在故宫疾走的爷爷</figurecaption>
+<img src="/images/2020/12/grandpa-in-forbidden-city.jpeg" style="width: 640px;" />
+<figcaption>在故宫疾走的爷爷</figcaption>
 </figure>
 
 疫情期间，开始认真地学做饭，现在厨艺已经精进了不少。
+
+<figure style="text-align: center;">
+<img src="/images/2020/12/lijingmingmen.jpeg" style="width: 840px;" />
+<figcaption>住了一年的利景名门的阳台窗外的雪景</figcaption>
+</figure>
+
+10.15 号从利景名门搬到了澳洲康都。其实挺喜欢利景名门那个小区的，外头风景好，交通也便利。
 
 ## 工作&编程篇
 

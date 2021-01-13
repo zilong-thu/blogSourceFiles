@@ -12,7 +12,7 @@ tags: NodeJS
 
 包括两部分：
 
-```
+```bash
 $ npm init
 $ git init
 ```

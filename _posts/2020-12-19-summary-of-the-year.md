@@ -16,7 +16,7 @@ PS：这份总结从 12.19 开始写，陆陆续续补充，一直写到了 12.3
 
 去年年底跟小可分手（难过了一个冬天），今年年初复合（很开心 `^_^`），然后 5 月跟小可领证，下半年办了婚礼。这是今年最开心的事情了~~ 人生啊。
 
-<figure>
+<figure class="image">
 <img src="/images/2020/12/5.22-in-nanjing.jpg" style="width: 640px;">
 <figcaption>那天灯光正好，气氛正好，也有人祝福。</figcaption>
 </figure>
@@ -29,14 +29,14 @@ PS：这份总结从 12.19 开始写，陆陆续续补充，一直写到了 12.3
 
 今年的车技练得很溜了，开了好几次高速，在北京、山东、河北、山西多个省市开车到处跑，开心得不得了。现在在北京工作已经满 5 年了，终于有了参与新能源车排队的资格了。祝愿早日排上~~
 
-<figure style="text-align: center;">
+<figure class="image" style="text-align: center;">
 <img src="/images/2020/12/grandpa-in-forbidden-city.jpeg" style="width: 640px;" />
 <figcaption>在故宫疾走的爷爷</figcaption>
 </figure>
 
 疫情期间，开始认真地学做饭，现在厨艺已经精进了不少。
 
-<figure style="text-align: center;">
+<figure class="image" style="text-align: center;">
 <img src="/images/2020/12/lijingmingmen.jpeg" style="width: 840px;" />
 <figcaption>住了一年的利景名门的阳台窗外的雪景</figcaption>
 </figure>
@@ -117,7 +117,7 @@ PS：这份总结从 12.19 开始写，陆陆续续补充，一直写到了 12.3
 
 基金今年的整体收益率是 21.07%（到 12.31）。中间清仓了几只基金（白酒，新能源汽车），现在想来那简直是瞎 JB 操作。所以我的收益率跑输了沪深 300，也跑输了北京 14% 的基民——北京理财厉害的人真是太多了。
 
-<figure style="text-align: center;">
+<figure class="image" style="text-align: center;">
 <img src="/images/2020/12/finace-public-funds.jpeg" style="width: 500px;" />
 <figcaption>截止到 12.19 的收益率</figcaption>
 </figure>

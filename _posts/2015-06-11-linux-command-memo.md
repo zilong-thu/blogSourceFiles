@@ -1,10 +1,11 @@
 ---
-title: Ubuntu Linux常用命令笔记
+title: Ubuntu Linux 常用命令笔记
 sidebar: false
 date: 2015-06-11 14:15:02
 tags: Linux
-categories: Operating System
-
+categories:
+  - Operating System
+  - Linux
 ---
 
 ## 写在前头

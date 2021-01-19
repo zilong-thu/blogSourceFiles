@@ -6,9 +6,11 @@ comments: true
 categories: HTML5
 sidebar: false
 ---
+
 <div id="noticeBox" class="noticeBox"></div>
 
 在包含GPS硬件的设备上，通过GPS单元可以获取精确的位置信息。不过，大多数情况下，位置信息都是通过Web获取的。当浏览器提交Internet IP地址给一个Web服务器的时候，该服务器通常能够知道（基于ISP记录）该IP属于哪个城市（通常广告商会在服务器端这么做）。
+
 <!-- more -->
 
 本来想采用Script DOM Element方法动态加载外部脚本，未能如愿（失败了的代码如下）。有时间再研究。
@@ -60,7 +62,7 @@ window.onload = function(){
 		var image = document.createElement('img');
 		var url = 'http://maps.googleapis.com/maps/api/staticmap'+
 				  '?center=' + latitude + ',' + longitude + '&size=640x450&sensor=true';
-		
+
 		// 设置大致的缩放级别
 		var zoomlevel = 21;
 		if(accuracy > 100){
@@ -106,6 +108,4 @@ window.onload = function(){
 		}
 	}
 };
-
-
 </script>

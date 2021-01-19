@@ -122,6 +122,10 @@ passwd: password updated successfully
 
 `chmod 744 [filename]`  把一个文件的权限改为 `rwxrwxr--`
 
+`chmod` 的意思是 `change mode`，即改变文件的状态。`chmod` 最简单的使用语法是 `chmod mode file`，其中 `mode` 是权限设定字串，格式为 `[ugoa...][[+-=][rwxX]`。
+
+`chmod u+x [filename]`，`u` 表示该文件的拥有者，`+` 表示增加权限，`x` 表示可执行。
+
 ## 网络操作
 
 ### `lsof`命令

@@ -14,7 +14,7 @@ tags: NodeJS
 > 一个MEAN架构下的开源项目介绍，包括背景、设计、开发过程，Austack是SaaS服务，Identity as a Service.
 
 + A Web Developer’s Learning from App Development - Steve
-> 近些年来，Hy‎brid App逐渐流行一种快速的应用开发路径。主讲人拥有多年Web开发经验，但他将在本次活动中为大家分享自己最近一年App开发中遇到的故事和经验。
+> 近些年来，Hybrid App逐渐流行一种快速的应用开发路径。主讲人拥有多年Web开发经验，但他将在本次活动中为大家分享自己最近一年App开发中遇到的故事和经验。
 
 + Node.js Based IM - Mofei
 > Node.js的效率和稳定性一直受到大家的关注，尤其是在超高并发的情况下，这次我们尝试了解Node.js搭建大型IM即时通讯系统背后的“故事”，以及如何架构可拓展高可用性的即时通讯系统。

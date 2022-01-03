@@ -22,7 +22,7 @@ banner: /images/2021/12/beach.jpeg
 五一小长假，我先回了趟家。然后回北京，5.10 跟小可先去石家庄拜会丈母娘和老丈人，然后出发前往海南，度婚假。领证是去年 5.21，婚假一共 10 天，再加上头尾的周末、又请了 2 天年假，一共休了 14 天的假期 —— 有生之年休过的最长第一次带薪假期了（法定节假日的不算）。
 
 <figure class="image">
-<img src="/images/2021/12/dawn-in-hainan.jpeg" style="width: 640px;" />
+<img src="/images/2021/12/dawn-in-hainan.jpeg" style="width: 720px;" />
 <figcaption>海口北部的海边晚霞</figcaption>
 </figure>
 
@@ -41,8 +41,8 @@ banner: /images/2021/12/beach.jpeg
 </figure>
 
 <figure class="image">
-<img src="/images/2021/12/cat-2.jpeg" style="width: 640px;" />
-<figcaption>小奶猫</figcaption>
+<img src="/images/2021/12/cat-2.jpeg" style="width: 720px;" />
+<figcaption>小奶猫。我们给它取名叫祢豆子，希望它不要咬人。</figcaption>
 </figure>
 
 10.1，跟研究生室友和他的朋友一起去爬了东灵山。风景真好。
@@ -52,7 +52,7 @@ banner: /images/2021/12/beach.jpeg
 <figcaption>北京东灵山·高山草甸</figcaption>
 </figure>
 
-国庆之后，澳洲康都合租的房子到期，我们搬到了点击未来，整租了一个小开间，6000 块一个月，有点贵。好在小区安静，整租自在。
+国庆之后，澳洲康都合租的房子到期，我们搬到了点击未来，整租了一个小开间，6000 块一个月，有点贵。好在小区安静，整租自在。说到房子，今年上半年开始陆陆续续出去看房，二手房、新房都看了。目前自然处于贵的买不起、便宜的看不上这么一个状态。看房的过程中了解了不少房地产行业的知识，房产交易税费、房地产税（还没有全面推出）、集中供地与土地财政等等。但还不够，继续学吧。首付，也再攒一攒。
 
 今年的最后，以一次骨折收场。应该是人生第一次骨折。2014年那次是韧带撕裂，骨头没事。趁此机会，简单学习了一下骨折愈合机理。写这篇博客的时候，正处于骨痂形成期。
 

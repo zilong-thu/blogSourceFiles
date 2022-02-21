@@ -109,3 +109,32 @@ console.log(name);  // Bob
 ```javascript
 console.log(stu);  // Uncaught ReferenceError: stu is not defined
 ```
+
+## `Object`、`Map` 和 `WeakMap` 的区别
+
+这个比较还是比较重要的，说明了 JS 语言是在进步的。
+
++ 意外的键：Map 默认情况不包含任何键，只包含显式插入的键。一个 Object 有一个原型，原型链上的键名有可能和你自己在对象上的设置的键名产生冲突，用 Object.create(null) 可以创建一个没有原型的对象。
++ 键的类型：一个 Map的键可以是任意值，包括函数、对象或任意基本类型。一个Object 的键必须是一个 String 或是Symbol。
++ 键的顺序： Map 中的 key 是有序的。因此，当迭代的时候，一个 Map 对象以插入的顺序返回键值。一个 Object 的键则是无序的，但是自 ECMAScript 2015规范以来，对象确实保留了字符串和Symbol键的创建顺序，因此，在只有字符串键的对象上进行迭代将按插入顺序产生键。
++ Size：Map 的键值对个数可以轻易地通过 size 属性获取。Object 的键值对个数可以通过 Object.keys(obj).length 计算。
++ 遍历： Map 是 iterable 的，所以可以直接被迭代。迭代一个Object需要以某种方式获取它的键然后才能迭代，`for...in`，或者 `Object.keys()`。
++ 性能： Map 在频繁增删键值对的场景下表现更好。Object 在频繁添加和删除键值对的场景下未作出优化。
+
+`Map` 的存储结构可以用数组来理解：
+
+```javascript
+const map = [
+  ["name","张三"],
+  ["age",18],
+];
+```
+
+`Map` 构造函数也可以接受一个二维数组来初始化一个实例：
+
+```javascript
+var l = new Map([
+  ['name', 'l'],
+  ['age', 19],
+]);
+```

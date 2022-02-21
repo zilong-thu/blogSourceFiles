@@ -83,3 +83,29 @@ const p = new Proxy(target, handler);
 + `handler`: 一个通常以函数作为属性的对象，各属性中的函数分别定义了在执行各种操作时代理 p 的行为。
 
 不过，`p instanceof Proxy` 却会报错，`p instanceof Object` 则正常返回 `true`。
+
+`Proxy` 的兼容性肯定是越来越好，PC 端、主流的移动设备，基本问题不大了。
+
+## 如何提取深度嵌套的对象里的指定属性？
+
+这个比较有意思。解构赋值在处理层级较浅的对象时很清晰，但是如果对象层级比较深，其实也是有办法解构的：
+
+```javascript
+const school = {
+   classes: {
+      stu: {
+         name: 'Bob',
+         age: 24,
+      }
+   }
+};
+
+const { classes: { stu: { name } }} = school;
+console.log(name);  // Bob
+```
+
+注意此时其他的层级（例如 classes、stu）都不是解构赋值，即解构赋值仅作用于最末层。
+
+```javascript
+console.log(stu);  // Uncaught ReferenceError: stu is not defined
+```

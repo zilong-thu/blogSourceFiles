@@ -51,3 +51,35 @@ const object1 = {
 
 console.log(Number(object1));  // 输出 42
 ```
+
+## 数组的 rest 操作符
+
+`Math.min()` 与 `Math.max()` 都是可以接受任意个数参数的，因此如果是数组，可以借助 rest 操作符展开数组：
+
+```javascript
+let arr = [1, 3, 8, 2, 4, 9];
+console.log(Math.min(...arr));  // 1
+console.log(Math.max(...arr));  // 9
+```
+
+## 关于 Proxy
+
+Proxy 对象用于创建一个对象的代理，从而实现基本操作的拦截和自定义（如属性查找、赋值、枚举、函数调用等）。
+
+基本语法：
+
+```javascript
+const target = {};
+const handler = {
+  set(target, key, value) {
+    console.log('key: ', key, ' => ', value);
+    target[key] = value;
+  }
+};
+const p = new Proxy(target, handler);
+```
+
++ `target`: 被 Proxy 代理虚拟化的对象，可以是任何类型的对象，包括原生数组，函数，甚至另一个代理。它常被作为代理的存储后端。——这里的“存储后端”，意味着我们实际使用时，一般通过 `p` 来访问、操作对象，而非使用 `target`。
++ `handler`: 一个通常以函数作为属性的对象，各属性中的函数分别定义了在执行各种操作时代理 p 的行为。
+
+不过，`p instanceof Proxy` 却会报错，`p instanceof Object` 则正常返回 `true`。

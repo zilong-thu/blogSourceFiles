@@ -146,3 +146,37 @@ var l = new Map([
 `async` 属性则让脚步异步加载（也是先下载），但是脚步加载完后立即解析执行。
 
 因此两个属性一起用比较合适，尤其针对错误监控、数据统计类的 SDK，它们往往不是业务必须的，可以采取种子脚本 + `<script src="path-to-js" defer async></script>` 的方式加载。
+
+## `||` 和 `&&` 操作符的返回值？
+
+这个问题的细节就是，这两个操作符并非返回布尔类型，而是返回其左右两侧之一的值（从而是该值的类型）。举个例子：
+
+```javascript
+typeof (1 || 2);  // => number
+```
+
+## 关于 Unicode
+
+Unicode 的官网 [home.unicode](https://home.unicode.org/) 有一句宣传语：
+
+> Everyone in the world should be able to use their own language on phones and computers.
+
+`UTF` 是 Unicode Transformation Format 的缩写。即描述的是编码方式，而非符号集本身。
+
+Unicode 使用 6 个 16 进制字符来表示全世界所有的字符。但是前两位是固定的，用来表示“平面”。因此其可以表达的字符个数 = 平面树 * 16 ^ 4。
+
+前面两个 16 进制位理论上可以支持 256 个平面，不过 Unicode 的选择是只设计了 17 个平面。
+
+因此 Unicode 可以表达的字符数 = 17 *  16 ^ 4 = 1114112。即大约 111 万个字符。
+
+这一块，看到的一个通俗易懂的博客：[Unicode - 平面（Plane）的概念 | Luna Tech](https://lunawen.com/basics/20201129-luna-tech-unicode-plane/)。
+
+## `encodeURIComponent` 在干什么？
+
+准确地说，`encodeURIComponent` 可以将 `A-Z a-z 0-9 - _ . ! ~ * ' ( )` 之外的所有字符转换为 `utf-8` 字符序列（每个字符前以 `%` 开头）。举个例子，我们对等于号 `=` 进行 `encodeURIComponent` 编码。
+
+`=` 在 ASCII 码和 Unicode 字符集中的编码都是 61，用 16 进制表示就是 3D，那么 `encodeURIComponent` 之后应该就是 `%3D`。
+
+```javascript
+console.log(encodeURIComponent('='));  // %3D
+```

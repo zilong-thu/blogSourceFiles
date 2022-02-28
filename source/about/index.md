@@ -13,7 +13,7 @@ sidebar:
 + 王子龙 [男]
 + 籍贯：山东省沂水县
 + 出生年月：1989-07
-+ 现居地：北京市朝阳区望京·澳洲康都小区
++ 现居地：北京市朝阳区望京·点击未来小区
 + E-mail： wangzilong-thu@qq.com
 + Github: https://github.com/zilong-thu/
 <li class="telephone">电话：17343008903</li>

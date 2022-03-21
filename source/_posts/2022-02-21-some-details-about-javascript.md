@@ -69,11 +69,19 @@ Proxy 对象用于创建一个对象的代理，从而实现基本操作的拦�
 基本语法：
 
 ```javascript
-const target = {};
+const target = {
+  next: {
+    name: '',
+  }
+};
 const handler = {
   set(target, key, value) {
     console.log('key: ', key, ' => ', value);
     target[key] = value;
+  },
+  get(target, key, receiver) {
+    console.log('trying to get', key);
+    return target[key];
   }
 };
 const p = new Proxy(target, handler);
@@ -85,6 +93,29 @@ const p = new Proxy(target, handler);
 不过，`p instanceof Proxy` 却会报错，`p instanceof Object` 则正常返回 `true`。
 
 `Proxy` 的兼容性肯定是越来越好，PC 端、主流的移动设备，基本问题不大了。
+
+一个更细节的问题：使用 `Proxy` 能否监听嵌套的对象？
+
+### 1. 访问已存在的嵌套对象的属性
+
+```javascript
+p.next.name;
+
+// 访问正常
+// 输出 trying to get next 以及对应的值
+```
+
+### 2. 动态添加嵌套的对象
+
+```javascript
+p.child = {
+  name: 'a',
+};
+
+console.log(p.child.name);
+```
+
+也是能正常操作的。
 
 ## 如何提取深度嵌套的对象里的指定属性？
 

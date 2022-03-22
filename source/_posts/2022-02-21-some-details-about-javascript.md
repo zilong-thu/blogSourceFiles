@@ -211,3 +211,29 @@ Unicode 使用 6 个 16 进制字符来表示全世界所有的字符。但是�
 ```javascript
 console.log(encodeURIComponent('='));  // %3D
 ```
+
+## 再来聊聊 async、await 与事件循环
+
+这个文章比较狠：[【建议星星】要就来45道Promise面试题一次爽到底(1.1w字用心整理)](https://juejin.cn/post/6844904077537574919)。确实很良心，能让人把异步编程吃透了。文章信息：
+
+> 作者：LinDaiDai_霖呆呆
+> 链接：https://juejin.cn/post/6844904077537574919
+> 来源：稀土掘金
+> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+总而言之，关键点：
+
++ `Promise.then()` 或 `catch()` 会创造一个微任务，放在当前事件循环的尾部来执行。
++ `process.nextTick()` 也会创建一个微任务，
++ `.then` 或者 `.catch` 中 `return` 一个 `Error` 对象并不会抛出错误，所以不会被后续的 `.catch` 捕获。
++ 在 `Promise` 中，返回任意一个非 `Promise` 的值都会被包裹成 `Promise` 对象。
++ `Promise` 的状态一经改变就不能再改变。
+
+`process.nextTick` 的工作细节，在 Node 的官网里有详细介绍：
+
+> Every time the event loop takes a full trip, we call it a tick.
+> When we pass a function to `process.nextTick()`, we instruct the engine to invoke this function at the end of the current operation, before the next event loop tick starts.
+> The event loop is busy processing the current function code.
+> When this operation ends, the JS engine runs all the functions passed to nextTick calls during that operation.
+> It's the way we can tell the JS engine to process a function asynchronously (after the current function), but as soon as possible, not queue it.
+> —— from [Understanding process.nextTick()](https://nodejs.dev/learn/understanding-process-nexttick)

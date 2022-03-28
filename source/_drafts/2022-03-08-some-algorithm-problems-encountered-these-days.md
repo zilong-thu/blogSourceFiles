@@ -167,3 +167,18 @@ function getDataList(urls: string[]): Promise<void> {
   });
 }
 ```
+
+
+## 找到二叉树中两个节点的最近公共父节点
+
+```javascript
+class TreeNode () {
+  constructor(val) {
+    this.val = val;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+// 关键在于遍历这个二叉树，按照深度优先遍历，分别记录两个节点的访问路径
+```

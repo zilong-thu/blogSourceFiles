@@ -439,10 +439,17 @@ domexception@^2.0.1:
   dependencies:
     webidl-conversions "^5.0.0"
 
-domhandler@^4.0.0, domhandler@^4.2.0:
+domhandler@^4.2.0:
   version "4.3.0"
   resolved "https://registry.npmmirror.com/domhandler/download/domhandler-4.3.0.tgz"
   integrity sha512-fC0aXNQXqKSFTr2wDNZDhsEYjCiYsDWl3D01kwt25hm1YIPyDGHvvi3rw+PLqHAl/m71MaiF7d5zvBr0p5UB2g==
+  dependencies:
+    domelementtype "^2.2.0"
+
+domhandler@^4.2.2:
+  version "4.3.1"
+  resolved "https://registry.npmmirror.com/domhandler/-/domhandler-4.3.1.tgz#8d792033416f59d68bc03a5aa7b018c1ca89279c"
+  integrity sha512-GrwoxYN+uWlzO8uhUXRl0P+kHE4GtVPfYzVLcUxPL7KNdHKj66vvlhiweIHqYYXWlw+T8iLMp42Lm67ghw4WMQ==
   dependencies:
     domelementtype "^2.2.0"
 
@@ -451,7 +458,7 @@ dompurify@^2.3.0:
   resolved "https://registry.npmmirror.com/dompurify/-/dompurify-2.3.5.tgz"
   integrity sha512-kD+f8qEaa42+mjdOpKeztu9Mfx5bv9gVLO6K9jRx4uGvh6Wv06Srn4jr1wPNY2OOUGGSKHNFN+A8MA3v0E0QAQ==
 
-domutils@^2.5.2:
+domutils@^2.8.0:
   version "2.8.0"
   resolved "https://registry.npmmirror.com/domutils/download/domutils-2.8.0.tgz"
   integrity sha1-RDfe9dtuLR9dbuhZvZXKfQIEgTU=
@@ -481,6 +488,11 @@ entities@^2.0.0:
   version "2.2.0"
   resolved "https://registry.npmmirror.com/entities/download/entities-2.2.0.tgz"
   integrity sha1-CY3JDruD2N/6CJ1VJWs1HTTE2lU=
+
+entities@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmmirror.com/entities/-/entities-3.0.1.tgz#2b887ca62585e96db3903482d336c1006c3001d4"
+  integrity sha512-WiyBqoomrwMdFG1e0kqvASYfnlb0lp8M5o5Fw2OFq1hNZxxcNk8Ik0Xm7LxzBhuidnZB/UtBqVCgUz3kBOP51Q==
 
 escape-html@~1.0.3:
   version "1.0.3"
@@ -770,24 +782,24 @@ hexo-server@^2.0.0:
     open "^7.0.0"
     serve-static "^1.14.1"
 
-hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.2.0, hexo-util@^2.5.0:
-  version "2.5.0"
-  resolved "https://registry.npmmirror.com/hexo-util/download/hexo-util-2.5.0.tgz"
-  integrity sha1-3lY1NBEWuiVjp4mg6861WodSIa0=
+hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.4.0, hexo-util@^2.5.0:
+  version "2.6.0"
+  resolved "https://registry.npmmirror.com/hexo-util/-/hexo-util-2.6.0.tgz#3265aa1b1983e48345a2af59c6785ac061886075"
+  integrity sha512-sLG45foxXMnMgCo3FpP4Sicj5nLD6ezO46+DKP01BWj1CfNq2pYoUdJacfeVbKc+oFtitRcNIGsPNNt3pVbzdg==
   dependencies:
     bluebird "^3.5.2"
     camel-case "^4.0.0"
     cross-spawn "^7.0.0"
     deepmerge "^4.2.2"
-    highlight.js "^10.7.1"
-    htmlparser2 "^6.0.0"
+    highlight.js "^11.0.1"
+    htmlparser2 "^7.0.0"
     prismjs "^1.17.1"
     strip-indent "^3.0.0"
 
-hexo@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npmmirror.com/hexo/-/hexo-5.0.0.tgz"
-  integrity sha512-ZScyRypZAlBX+l1tYp50SSIQJ+kFfPbB/+QSanVg6KeLM5ZJNzqUZhZPLnWi5I6rVLsjyaq53mC8nxtsiC4kSw==
+hexo@5.4.2:
+  version "5.4.2"
+  resolved "https://registry.npmmirror.com/hexo/-/hexo-5.4.2.tgz#7337b6adb0d495287051c03e944d84f66f64e356"
+  integrity sha512-Af6mxKwx9byalaffKgiQ8/bZfbXPo2SGEn2Q9hFh++15g15/IulvOhu8lQkJdyZNzmj3hOuSrJdqoUvIr3K/qw==
   dependencies:
     abbrev "^1.1.1"
     archy "^1.0.0"
@@ -798,8 +810,8 @@ hexo@5.0.0:
     hexo-fs "^3.1.0"
     hexo-i18n "^1.0.0"
     hexo-log "^2.0.0"
-    hexo-util "^2.2.0"
-    js-yaml "^3.12.0"
+    hexo-util "^2.4.0"
+    js-yaml "^3.14.1"
     micromatch "^4.0.2"
     moment "^2.22.2"
     moment-timezone "^0.5.21"
@@ -812,10 +824,10 @@ hexo@5.0.0:
     titlecase "^1.1.2"
     warehouse "^4.0.0"
 
-highlight.js@^10.7.1:
-  version "10.7.3"
-  resolved "https://registry.npmmirror.com/highlight.js/download/highlight.js-10.7.3.tgz"
-  integrity sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==
+highlight.js@^11.0.1:
+  version "11.5.0"
+  resolved "https://registry.npmmirror.com/highlight.js/-/highlight.js-11.5.0.tgz#00abb7ed926491adbdabc93a4f3fd2b88b451b4a"
+  integrity sha512-SM6WDj5/C+VfIY8pZ6yW6Xa0Fm1tniYVYWYW1Q/DcMnISZFrC3aQAZZZFAAZtybKNrGId3p/DNbFTtcTXXgYBw==
 
 html-encoding-sniffer@^2.0.1:
   version "2.0.1"
@@ -824,15 +836,15 @@ html-encoding-sniffer@^2.0.1:
   dependencies:
     whatwg-encoding "^1.0.5"
 
-htmlparser2@^6.0.0:
-  version "6.1.0"
-  resolved "https://registry.npmmirror.com/htmlparser2/download/htmlparser2-6.1.0.tgz"
-  integrity sha1-xNditsM3GgXb5l6UrkOp+EX7j7c=
+htmlparser2@^7.0.0:
+  version "7.2.0"
+  resolved "https://registry.npmmirror.com/htmlparser2/-/htmlparser2-7.2.0.tgz#8817cdea38bbc324392a90b1990908e81a65f5a5"
+  integrity sha512-H7MImA4MS6cw7nbyURtLPO1Tms7C5H602LRETv95z1MxO/7CP7rDVROehUYeYBUYEON94NXXDEPmZuq+hX4sog==
   dependencies:
     domelementtype "^2.0.1"
-    domhandler "^4.0.0"
-    domutils "^2.5.2"
-    entities "^2.0.0"
+    domhandler "^4.2.2"
+    domutils "^2.8.0"
+    entities "^3.0.1"
 
 http-errors@1.8.1:
   version "1.8.1"
@@ -950,7 +962,7 @@ jake@^10.6.1:
     filelist "^1.0.1"
     minimatch "^3.0.4"
 
-js-yaml@^3.12.0, js-yaml@^3.13.1:
+js-yaml@^3.13.1, js-yaml@^3.14.1:
   version "3.14.1"
   resolved "https://registry.npmmirror.com/js-yaml/-/js-yaml-3.14.1.tgz"
   integrity sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==

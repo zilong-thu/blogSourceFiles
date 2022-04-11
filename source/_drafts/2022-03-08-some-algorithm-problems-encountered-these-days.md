@@ -182,3 +182,35 @@ class TreeNode () {
 
 // 关键在于遍历这个二叉树，按照深度优先遍历，分别记录两个节点的访问路径
 ```
+
+## 最大岛屿问题，Leetcode 695 题
+
+```javascript
+const grid = [
+  [0,0,1,0,0,0,0,1,0,0,0,0,0],
+  [0,0,0,0,0,0,0,1,1,1,0,0,0],
+  [0,1,1,0,1,0,0,0,0,0,0,0,0],
+  [0,1,0,0,1,1,0,0,1,0,1,0,0],
+  [0,1,0,0,1,1,0,0,1,1,1,0,0],
+  [0,0,0,0,0,0,0,0,0,0,1,0,0],
+  [0,0,0,0,0,0,0,1,1,1,0,0,0],
+  [0,0,0,0,0,0,0,1,1,0,0,0,0]
+];
+
+function maxAreaOfIsland(grid) {
+  const m = grid.length;
+  const n = grid[0].length;
+  let max = 0;
+  for (let i = 0; i < m; i++) {
+    for (let j = 0; j < n; j++) {
+      if (grid[i][j]) {
+        max = Math.max(max, areaOfIland(grid, i, j));
+      }
+    }
+  }
+}
+
+function areaOfIland(grid, i, j) {
+  if ()
+}
+```

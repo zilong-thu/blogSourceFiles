@@ -214,3 +214,46 @@ function areaOfIland(grid, i, j) {
   if ()
 }
 ```
+
+## 猿辅导-已有 Promise，请实现 Promise.all
+
+```javascript
+readFile((file, (err, data) => {
+  if (err) {
+    return err;
+  }
+
+  return data;
+}));
+
+// 先进行 Promisify
+function readFileP(file) {
+  return new Promise((resolve, reject) => {
+    readFile((file, (err, data) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(data);
+      }
+    }));
+  });
+}
+
+Promise.all = function(list) {
+  return new Promise((resolve, reject) => {
+    const len = list.length;
+    const resList = new Array(len).fill(undefined);
+    for (let i = 0; i < len; i++) {
+      readFileP(list[i]).then(data => {
+        list[i] = data;
+        // 检查是否 list 里的每一项都不是 undefined 了
+        if (list.every(item => item !== undefined)) {
+          resolve(list);
+        }
+      }).catch(err => {
+        reject(err);
+      })
+    }
+  });
+}
+```

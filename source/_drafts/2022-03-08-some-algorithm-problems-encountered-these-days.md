@@ -4,7 +4,7 @@ tags: 算法
 ---
 
 
-## Sum 问题及其变体的解答与分析
+## Sum 问题及其变体的解答与分析（✓）
 
 ```javascript
 function sum(...args) {
@@ -33,7 +33,7 @@ console.log(c);
 ```
 
 
-## 任务控制器
+## 任务控制器（✓）
 
 ```javascript
 /**
@@ -129,7 +129,7 @@ function prime(n) {
 
 翻了一下《算法导论》，挺复杂的。
 
-## 顺序控制（尾调用）
+## 顺序控制（尾调用）（✓）
 
 问题：已知 getData 是一个可以返回 Promise 的函数，要求不使用 async/await，实现一个 getDataList，可以确保每个 getData 是串行调用的。
 
@@ -215,7 +215,7 @@ function areaOfIland(grid, i, j) {
 }
 ```
 
-## 猿辅导-已有 Promise，请实现 Promise.all
+## 猿辅导-已有 Promise，请实现 Promise.all（✓）
 
 ```javascript
 readFile((file, (err, data) => {

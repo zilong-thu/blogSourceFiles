@@ -257,3 +257,71 @@ Promise.all = function(list) {
   });
 }
 ```
+
+## 二叉树层序遍历
+
+```javascript
+class TreeNode() {
+  constructor(val) {
+    this.val = val;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+const tree = {
+  val: 1,
+  left: {
+    val: 2,
+    left: {
+      val: 4,
+      left: {
+        val: 8,
+      },
+      right: {
+        val: 9
+      }
+    },
+    right: {
+      val: 5,
+      left: {
+        val: 10,
+      },
+      right: {
+        val: 11
+      }
+    }
+  },
+  right: {
+    val: 3,
+    left: {
+      val: 6,
+      left: {
+        val: 12
+      }
+    },
+    right: {
+      val: 7
+    }
+  }
+}
+
+/**
+ * 这个是深度优先遍历，是比较好实现的
+ */
+function walkTree(root) {
+  const res = [];
+
+  const visit = (node) => {
+    if (node) {
+      res.push(node.val);
+      visit(node.left);
+      visit(node.right);
+    }
+  }
+
+  visit(root);
+
+  console.log(res);
+}
+```

@@ -2,6 +2,7 @@
 title: 《彼得·林奇的成功投资》读书笔记
 date: 2022-02-12 17:22:35
 tags:
+category: 金融理财
 ---
 
 《彼得·林奇的成功投资》，英文书名里有一个副标题，**How to use what you already know to make money in the market**。这句英文所传达的观点其实更贴近股票投资的本质。

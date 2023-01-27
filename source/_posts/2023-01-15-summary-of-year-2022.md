@@ -1,7 +1,8 @@
 ---
-title: Summary of Year 2022
+title: Goodbye, 2022
 date: 2023-01-15 13:21:24
-tags:
+tags: 总结
+category: 总结
 ---
 
 

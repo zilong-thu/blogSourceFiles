@@ -16,7 +16,7 @@ category: 总结
 ## 工作篇
 
 <figure class="image">
-<img src="/images/2022/summary-of-2022/02-13-way-to-company.jpg" style="width: 640px;" />
+<img src="/images/2022/summary-of-2022/02-13-way-to-company.jpg" style="width: 800px;" />
 <figcaption>2022.02.13，这天下着大雪，春节后开始居家办公，去公司拿电脑的路上</figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ category: 总结
 </figure>
 
 <figure class="image">
-<img src="/images/2022/summary-of-2022/12-31-sanya-beach.jpg" style="width: 640px;" />
+<img src="/images/2022/summary-of-2022/12-31-sanya-beach.jpg" style="width: 800px;" />
 <figcaption>元旦在三亚度过。第一次在这么温暖的地方过元旦。很开心。</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ category: 总结
 今年从5月份开始爬山，一共爬了 6 次，每次都很尽兴，体力消耗也很大。这里也浅记一下：夏天要喝 8 瓶 550ml 的矿泉水；冬天只需要 3 瓶就足够了。
 
 <figure class="image">
-<img src="/images/2022/summary-of-2022/05-21-on-the-mountain.jpeg" style="width: 640px;" />
+<img src="/images/2022/summary-of-2022/05-21-on-the-mountain.jpeg" style="width: 800px;" />
 <figcaption>5月21日，在密云爬山。那天刚好是我们结婚两周年纪念日，同行的朋友帮我们拍了很多好看的照片。</figcaption>
 </figure>
 
@@ -120,7 +120,8 @@ category: 总结
 
 按下面几个策略执行就好了。
 
-+ 基本不用加仓。除非等到大家都在喊惨、吃面的时候再考虑加仓。
++ 基本不用加仓。除非等到大家都在喊惨、吃面的时候再考虑加仓。要等待时机买入的股票：
+  - 贵州茅台，PE < 30 就买入。春节在亲戚那里喝到了十年的茅台，感觉茅台贵有贵的道理。决定做一个长期股东。
+  - 万华化学，PE < 10 就买入。因为这个多少是个周期股，等股价低的时候比较好。
 + 分红的钱也拿出来，先放在余额宝，然后等待上面的时机。
-+ 如果市盈率非常高了，就卖出。比如腾讯超过 700 港币，美团超过 400 港币，TCL 超过 10 块。卖出后不着急买入，等待第一条里提到的时机再买入。
-
++ 如果市盈率非常高了，就卖出。比如腾讯超过 700 港币，美团超过 400 港币，TCL 超过 10 块。卖出后不着急买入，等待第一条里提到的时机再买入。这里列的 TCL 是不太想继续持有的，经过一年多的跟踪，感觉京东方更好一点。

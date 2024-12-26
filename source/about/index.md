@@ -4,7 +4,10 @@ date: 2015-08-09 10:49:42
 sidebar:
 ---
 
-<img src="myResumeAvatar.jpg" class="avatar" style="max-width: 128px;">
+<div class="avatar">
+<img src="myResumeAvatar.jpg" style="max-width: 128px;">
+<div style="padding-top: 20px; font-weight: bold; text-align: center;"><a href="/about/en">[ English Version ]</a></div>
+</div>
 
 <link rel="stylesheet" type="text/css" href="./index.css">
 

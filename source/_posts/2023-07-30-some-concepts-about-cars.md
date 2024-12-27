@@ -2,9 +2,8 @@
 title: 一些汽车知识
 date: 2023-07-30 01:12:41
 tags:
-  - 分红
-  - 金融理财
-category: 金融理财
+  - cars
+category: cars
 ---
 
 ## 汽车安全相关
@@ -12,6 +11,8 @@ category: 金融理财
 ### AEB
 
 自动紧急刹车系统（Autonomous Emergency Braking，简称 AEB）。
+
+<!-- more -->
 
 ### TTC
 

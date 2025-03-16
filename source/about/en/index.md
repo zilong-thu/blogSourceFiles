@@ -22,6 +22,8 @@ wangzilong26@gmail.com<span style="margin-left: 8em;">(+86)17343008903</span>
 
 ### Meituan Technology Co. Ltd, 04/2018 - 07/2022
 
+- Senior Software Development Engineer
+
 - Enrolled as an intermediate front-end developer with a level P2-3 (P7, or L7), left the company at the level L8 (P3-1) as an experienced senior front-end developer, and technical director of the passenger marketing front-end team in Meituan Dache Business Group.
 - Ownership of these marketing activity systems, infra tools, and technology projects:
   - H5 pages in Meituan App, Weixin App.
@@ -38,12 +40,16 @@ wangzilong26@gmail.com<span style="margin-left: 8em;">(+86)17343008903</span>
 
 ### Maoyan Culture Media Co. Ltd, 12/2015 - 04/2018
 
+- Intermediate Software Development Engineer
+
 - Enrolled as a junior front-end developer with a level P5 (P2-1), left the company at the level P7 (P2-3) as an intermediate front-end developer.
 - Develope and maintain two To-B websites: e.maoyan.com, for cinema owners and staff; p.maoyan.com, an in-house website for film distribution management.
 - Ownership of to-C front-end actor pages as subpages of piaofang.maoyan.com and corresponding miniprograms running in WeChat. I built those pages from 0 to 1.
 - Interviewing candidates; mentoring two newcomers of the team.
 
 ### North Information Control Group, Nanjing, 07/2014 - 11/2015
+
+- Junior Software Development Engineer
 
 - Leading front-end and node.js development for an experimental LBS based web app.
 

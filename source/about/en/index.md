@@ -4,7 +4,9 @@ date: 2024-12-02 16:55:00
 sidebar:
 ---
 
-wangzilong26@gmail.com<span style="margin-left: 8em;">(+86)17343008903</span>
+<link rel="stylesheet" type="text/css" href="../index.css">
+
+wangzilong26@gmail.com
 
 ## EDUCATION
 

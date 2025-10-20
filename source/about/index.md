@@ -5,7 +5,6 @@ sidebar:
 ---
 
 <div class="avatar">
-<img src="myResumeAvatar.jpg" style="max-width: 128px;">
 <div style="padding-top: 20px; font-weight: bold; text-align: center;"><a href="/about/en">[ English Version ]</a></div>
 </div>
 
@@ -17,8 +16,8 @@ sidebar:
 + 籍贯：山东省沂水县
 + 户籍：江苏省南京市
 + 出生年月：1989-07
-+ 现居地：北京市海淀区
-+ E-mail： wangzilong-thu@qq.com
++ 现居地：新加坡
++ E-mail： wangzilong26@gmail.com
 + Github: https://github.com/zilong-thu/
 <li class="telephone">电话：17343008903</li>
 

@@ -17,8 +17,8 @@ wangzilong26@gmail.com
 
 ### Bytedance, 07/2022 - Now
 
-- Department of Global Live-Platform-Frontend, 11/2024 - Now
-  - Senior engineer, still landing, will be owner of some sub-businesses in Money Platform.
+- Department of TikTok Global Live-Platform-Frontend, 11/2024 - Now
+  - Senior Frontend Engineer, owner of Money Platform Payin FE.
 - Department of Lark Desktop, 07/2022 - 11/2024
   - Served as a senior engineer in Feishu IM front-end team. Mainly responsible for the governance of defects in complex business logic of IM/oncall, as well as the special development of PC/WEB isomorphic projects.
 

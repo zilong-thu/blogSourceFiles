@@ -19,6 +19,8 @@ wangzilong26@gmail.com
 
 - Department of TikTok Global Live-Platform-Frontend, 11/2024 - Now
   - Senior Frontend Engineer, owner of Money Platform Payin FE.
+  - Money Platform B-side web projects.
+  - Keywords: Full-stack; BFF; keep-alive; indexedDB; Elastic Search.
 - Department of Lark Desktop, 07/2022 - 11/2024
   - Served as a senior engineer in Feishu IM front-end team. Mainly responsible for the governance of defects in complex business logic of IM/oncall, as well as the special development of PC/WEB isomorphic projects.
 

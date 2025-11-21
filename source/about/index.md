@@ -30,12 +30,13 @@ sidebar:
 
 + **2022.7 ~ 今，字节跳动，资深前端工程师**
   - **国际直播**，2024.11 ~ 今
+    - Senior Frontend Engineer, owner of Money Platform Payin FE.
     - Money Platform B-side web projects.
-    - Keywords: Full-stack; BFF; keep-alive; indexedDB.
+    - Keywords: Full-stack; BFF; keep-alive; indexedDB; Elastic Search.
   - **飞书**，2022.7 ~ 2024.11
     - IM 前端资深工程师
     - 主要项目：IM 复杂业务逻辑缺陷/oncall治理；PC/WEB同构专项开发。
-    - 关键词：虚拟列表；Video Conference Chat + IM SDK; Lark Web Messenger；客户端缓存技术；飞书文档内消息链接块性能优化。
+    - 关键词：虚拟列表；Video Conference Chat + IM SDK; Lark Web Messenger；客户端缓存设计与数据同步；飞书文档内消息链接块性能优化。
 
 + **2018-04 至 2022.6，美团·网约车·打车技术部·终端研发组，资深前端工程师**
   - 2020.10 起至 2022.6，担任美团·网约车·打车技术部·乘客营销前端组技术负责人。团队规模：6 + 1 人。负责团队技术项目规划、业务需求管理、下属成长发展与绩效管理、团队技术与学习氛围建设。技术项目包括H5 标准桥重构与迭代；前端性能优化；乘客活动经营工作台项目迭代与维护；业务指标体系建设；TypeScript 推广普及与代码重构；图片服务维护与迭代（Node + `sharp.js`）等。

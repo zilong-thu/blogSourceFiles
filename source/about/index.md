@@ -82,8 +82,8 @@ sidebar:
 ### 写作
 
 + 常年维护并更新博客，[https://zilong-thu.github.io](https://zilong-thu.github.io)
-+ 电子书（有心情就写一点）：[学习正则表达式-基于JavaScript](https://borninsummer.com/learn-regexp-with-javascript/)
-+ 电子书（有心情就写一点）：[Web前端工程化与组件化开发实践](https://borninsummer.com/Practice-in-Front-End-Engineering-and-Components-Development/)
++ 电子书（有心情就写一点）：[学习正则表达式-基于JavaScript](https://zilong-thu.github.io/learn-regexp-with-javascript/)
++ 电子书（有心情就写一点）：[Web前端工程化与组件化开发实践](https://zilong-thu.github.io/Practice-in-Front-End-Engineering-and-Components-Development/)
 
 ### 自我评价
 

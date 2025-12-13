@@ -6,7 +6,7 @@ tags: MySQL
 categories: MySQL
 ---
 
-在阿里云上部署完运行环境之后（部署参见[NodeJS+Express+MySQL开发小记(2):服务器部署](http://borninsummer.com/2015/06/17/notes-on-developing-nodejs-webapp/)），运行了几天，发现有张表的字符集默认成了 `Latin1`，导致中文只显示问号。
+在阿里云上部署完运行环境之后（部署参见[NodeJS+Express+MySQL开发小记(2):服务器部署](/2015/06/17/notes-on-developing-nodejs-webapp/)），运行了几天，发现有张表的字符集默认成了 `Latin1`，导致中文只显示问号。
 
 先趁此机会尝试安装MySQL5.6，省得以后再升级，但是折腾了一上午，未遂。权衡了一下，还是去修改当前的MySQL5.5的默认字符集得了。
 
@@ -25,7 +25,7 @@ mysql  Ver 14.14 Distrib 5.5.43, for debian-linux-gnu (x86_64) using readline 6.
 
 ```
 mysql> show variables like 'char%';
- 
+
 +--------------------------+----------------------------+
 | Variable_name            | Value                      |
 +--------------------------+----------------------------+
@@ -129,7 +129,7 @@ mysql> show variables like 'char%';
 
 ```
 SHOW CREATE TABLE table_name;
- 
+
 .....省略一大堆..() ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1
 ```
 

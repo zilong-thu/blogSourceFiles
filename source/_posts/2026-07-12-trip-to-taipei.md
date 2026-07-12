@@ -1,7 +1,7 @@
 ---
 title: A Trip To Taipei | 遇見台北
 date: 2026-07-12 01:23:55
-tags:
+category: 世界巡禮
 banner: /images/2026/07/jiufen-street.jpg
 ---
 

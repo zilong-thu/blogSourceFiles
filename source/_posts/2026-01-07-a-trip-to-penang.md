@@ -1,7 +1,7 @@
 ---
 title: A Trip To Penang | 槟城之旅
-date: 2026-02-07 17:23:58
-tags:
+date: 2026-01-07 17:23:58
+category: 世界巡禮
 banner: /images/2026/01/penang-name-bridges.jpg
 ---
 

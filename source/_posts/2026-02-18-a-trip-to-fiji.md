@@ -7,6 +7,8 @@ banner: /images/2026/02/fiji-serenity-island-2.jpg
 
 生平第一次来到南半球，一个热带多岛国家，斐济（Fiji）。
 
+<!-- more -->
+
 <figure class="image">
 <img src="/images/2026/02/fiji-dollar.jpg" style="width: 640px;" />
 <figcaption>Fiji Dollars</figcaption>
